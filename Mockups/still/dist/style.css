@@ -1,0 +1,284 @@
+:root{--paper:#fcf9f5;--ink:#321e1c;--muted:#776d68;--line:#e5ded7;--coral:#ef6552;--sage:#e5eadf}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.6 Arial,Helvetica,sans-serif}button,input,select,textarea{font:inherit}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{cursor:pointer}button:disabled{cursor:default;opacity:.5}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #ae442f;outline-offset:4px}header{height:100px;max-width:1280px;padding:0 48px;display:flex;align-items:center;margin:auto;gap:26px;border-bottom:1px solid var(--line)}.brand{font-family:Georgia,serif;font-size:38px;letter-spacing:-2px;font-weight:bold;line-height:1}.brand-mark{font-family:Arial;font-size:37px;display:inline-block;transform:rotate(-30deg);margin-right:9px}.brand-dot{color:var(--coral)}nav{display:flex;gap:34px;margin-left:auto;margin-right:auto}nav a{padding:38px 0 34px;color:var(--muted)}nav a.active{color:var(--ink);border-bottom:2px solid var(--ink)}.button{display:inline-flex;gap:14px;justify-content:center;align-items:center;border:1px solid var(--line);border-radius:5px;padding:13px 21px;background:transparent;color:var(--ink);font-size:13px;font-weight:600;line-height:1.5}.button:hover{background:#eee8e0}.dark{background:var(--ink);border-color:var(--ink);color:white}.dark:hover{background:#54352e}.coral{background:var(--coral);border-color:var(--coral);color:#2e1712}.coral:hover{background:#e95744}.small{padding:10px 17px}.icon-button{background:none;border:0;font-size:23px;color:var(--ink);width:38px;height:40px}.eyebrow{text-transform:uppercase;font-size:10px;letter-spacing:2px;font-weight:600;display:flex;gap:9px;align-items:center}.dot{height:6px;width:6px;background:var(--coral);border-radius:100%}main{max-width:1184px;margin:0 auto;padding:0 0 70px;min-height:75vh}.hero{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;min-height:460px;gap:50px;padding:50px 0 36px}h1,h2,h3,p{margin-top:0}h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{font-size:64px;line-height:1.05;letter-spacing:-2.7px;margin:22px 0}h1 em{font-style:normal;color:#bb5546}.hero p{max-width:380px;color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:26px}.hero-actions{display:flex;gap:20px;align-items:center}.text-link{font-size:12px;border:0;background:none;padding:10px 0;color:var(--ink);cursor:pointer}.text-link:hover{text-decoration:underline}.scene{height:345px;position:relative;background:#eee9df;border-radius:48% 48% 8px 8px;overflow:hidden;background-image:radial-gradient(ellipse at 50% 70%,#e3ded1,transparent 65%)}.scene:after{content:'';position:absolute;height:110px;width:100%;bottom:0;left:0;background:#e4decf;transform:skewY(-7deg);transform-origin:left}.tv{position:absolute;z-index:2;left:13%;top:48px;width:69%;height:190px;background:#392d28;border:8px solid #3a302a;border-radius:8px;box-shadow:7px 13px 16px #6a523325}.tv-screen{height:100%;overflow:hidden;position:relative;background:#bfc6ad}.tv-screen:before{content:'';width:220px;height:220px;background:#d8dcc7;border-radius:50%;position:absolute;top:20px;left:80px}.tv-screen:after{content:'';width:290px;height:190px;background:#96a28a;transform:rotate(-25deg);position:absolute;top:90px;left:-70px;border-radius:50%}.tv-foot{position:absolute;width:74px;height:33px;left:45%;top:235px;background:#3a302a;clip-path:polygon(35% 0,65% 0,74% 78%,100% 90%,100% 100%,0 100%,0 90%,27% 78%);z-index:3}.speaker{position:absolute;width:67px;height:102px;right:9%;bottom:42px;z-index:4;border-radius:24px 24px 19px 19px;background:repeating-linear-gradient(0deg,#605951 0 1px,#736d65 1px 3px);box-shadow:8px 8px 12px #0002}.speaker:before{content:'';position:absolute;top:0;width:100%;height:18px;border-radius:50%;background:#4d4842;border:2px solid #8c9c88}.privacy-tag{position:absolute;z-index:5;left:5%;bottom:49px;background:#fffdf8;padding:13px 18px;border:1px solid #fff9;border-radius:7px;box-shadow:0 8px 22px #56412d15;font-size:11px;transform:rotate(-4deg)}.privacy-tag span{display:inline-grid;place-items:center;background:#e9eddf;color:#58714c;border-radius:100%;width:25px;height:25px;margin-right:8px}.scene-note{position:absolute;right:24px;top:25px;font:italic 14px Georgia;color:#696455;z-index:3}.trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;padding:18px 18px;font-size:11px;color:var(--muted)}.trust-strip b{font-weight:400;color:var(--ink);margin-right:9px}.section{padding-top:46px}.section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;gap:16px}h2{font-size:32px;letter-spacing:-.8px;margin:0 0 6px}.section-heading p,.muted{color:var(--muted);font-size:12px;margin:0}.count{font:11px Arial;background:#eae5dc;border-radius:20px;padding:4px 9px;vertical-align:middle;margin-left:10px}.empty-inventory{display:flex;align-items:center;padding:26px 32px;border:1px solid var(--line);border-radius:7px;gap:25px}.empty-inventory p{color:var(--muted);font-size:12px;margin:5px 0}.empty-inventory .button{margin-left:auto}.device-icon{display:grid;place-items:center;width:62px;height:62px;flex:none;background:#eeeae2;border-radius:12px}.device-icon svg{width:32px;height:32px;stroke:currentColor;fill:none;stroke-width:1.4}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.guide-card{border:1px solid var(--line);padding:24px;border-radius:7px;background:#fffdfa;display:block;text-align:left;color:var(--ink);width:100%;transition:transform .15s,border-color .15s}.guide-card:hover{transform:translateY(-3px);border-color:#b4a69a}.guide-card .topline{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.guide-card .device-icon{width:47px;height:47px;background:transparent;border:1px solid #ddd8ce;border-radius:50%}.guide-card h3{font:24px Georgia;margin:0 0 9px}.guide-card p{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:22px}.card-bottom{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted)}.pill{display:inline-block;border-radius:20px;background:#f0ece4;font-size:10px;padding:4px 9px;letter-spacing:.1px}.pill.green{background:#e7eddf;color:#405237}.pill.amber{background:#f7ebd3;color:#765221}.bottom-note{margin-top:34px;padding:25px 28px;background:#edece3;display:flex;gap:20px;align-items:center;border-radius:6px}.bottom-note p{font-size:12px;margin:0;color:#6b6d5e}.bottom-note h3{font:20px Georgia;margin:0 0 4px}.bottom-note .text-link{margin-left:auto;white-space:nowrap}footer{border-top:1px solid var(--line);max-width:1184px;margin:0 auto;padding:25px 0 35px;display:flex;align-items:center;gap:25px;color:var(--muted);font-size:10px}footer .brand{font-size:28px;color:var(--ink)}.page-head{padding:55px 0 30px}.page-head h1{font-size:48px}.toolbar{display:flex;gap:12px;margin-bottom:25px}.toolbar input{flex:1}input,select,textarea{background:#fffdfa;border:1px solid #d8cec4;padding:12px;border-radius:5px;color:var(--ink);min-width:0}textarea{width:100%;resize:vertical}.device-row{display:flex;align-items:center;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.device-row .row-body{flex:1}.device-row h3{margin:0;font-size:16px}.device-row p{margin:3px 0;font-size:12px;color:var(--muted)}progress{accent-color:#67775b;width:100%;height:6px;border:0;display:block;margin:14px 0 6px}progress::-webkit-progress-bar{background:#e9e4dc;border-radius:5px}progress::-webkit-progress-value{background:#67775b;border-radius:5px}.detail-layout{display:grid;grid-template-columns:260px 1fr;gap:50px}.aside-panel{border-top:1px solid var(--line);padding-top:20px}.aside-panel p{font-size:12px;color:var(--muted)}.callout{background:#f1ede4;padding:18px 22px;border-radius:5px;font-size:12px;margin-bottom:20px}.steps details{border-bottom:1px solid var(--line);padding:20px 0}.steps summary{cursor:pointer;display:flex;align-items:center;gap:13px;font-size:15px;list-style:none}.step-num{border:1px solid var(--line);border-radius:50%;width:29px;height:29px;display:grid;place-items:center;font-size:11px;flex:none}.steps summary .pill{margin-left:auto}.step-body{padding:20px 0 0 42px;font-size:13px}.step-body p{color:var(--muted)}.step-body ol{padding-left:18px;line-height:1.9}.status-label{display:block;margin:18px 0 7px;font-size:11px;font-weight:600}.step-body select{width:100%}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.settings-panel{border:1px solid var(--line);border-radius:6px;padding:28px}.settings-panel h2{font-size:26px}.settings-panel p{color:var(--muted);font-size:13px}.settings-panel .button{margin:5px 5px 5px 0}.danger{color:#9b3a2c}.empty{text-align:center;border:1px dashed var(--line);padding:50px 20px;color:var(--muted);grid-column:1/-1}dialog{width:500px;max-width:calc(100% - 32px);border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:32px;color:var(--ink);max-height:90vh;overflow:auto}dialog::backdrop{background:#291c1855;backdrop-filter:blur(4px)}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modal-head h2{font-size:30px}label.field{display:flex;flex-direction:column;gap:7px;font-size:12px;margin-bottom:16px}.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:24px}#toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 24px;border-radius:5px;z-index:20;display:none;font-size:13px;max-width:90%}#toast.show{display:block}#save-error{position:fixed;bottom:0;left:0;right:0;background:#ffe1cd;padding:16px;z-index:25}.skip{position:fixed;top:-80px;background:white;padding:12px;z-index:50}.skip:focus{top:0}.guide-intro{max-width:650px;color:var(--muted)}@media(min-width:1450px){main,footer{max-width:1184px}.hero{min-height:490px}}@media(max-width:1250px){main,footer{margin-left:45px;margin-right:45px}header{padding:0 45px}.hero h1{font-size:57px}}@media(max-width:800px){header{padding:0 24px;gap:12px;height:85px}nav{gap:20px}nav a{font-size:12px;padding:30px 0}header>.icon-button{display:none}header>.button{font-size:11px;padding:10px}.brand{font-size:30px}.brand-mark{font-size:28px}main,footer{margin-left:24px;margin-right:24px}.hero{gap:25px}.hero h1{font-size:47px}.scene{height:300px}.tv{top:60px;height:145px}.tv-foot{top:200px}.speaker{height:85px;width:52px}.privacy-tag{left:3%;font-size:9px;padding:10px}.trust-strip{gap:10px;padding:17px 0;font-size:10px}.cards{gap:12px}.guide-card{padding:18px}.detail-layout{grid-template-columns:190px 1fr;gap:25px}.settings-grid{gap:14px}}@media(max-width:600px){header{flex-wrap:wrap;height:auto;padding:20px 20px 0;gap:15px}.brand{margin-right:auto}header>.button{order:2}nav{order:3;width:100%;justify-content:space-between;margin:0;gap:10px}nav a{padding:14px 0}.hero{display:flex;flex-direction:column;align-items:stretch;padding-top:34px;gap:32px}.hero h1{font-size:50px;max-width:360px}.hero p{font-size:14px}.hero .scene{height:280px;max-width:430px;width:100%;align-self:center}.tv{height:153px;top:36px}.tv-foot{top:185px}.speaker{bottom:31px}.privacy-tag{bottom:40px}.trust-strip{flex-wrap:wrap;justify-content:center;column-gap:22px;row-gap:8px}.section{padding-top:33px}h2{font-size:29px}.section-heading{align-items:flex-start}.section-heading>.text-link{white-space:nowrap}.empty-inventory{padding:22px;flex-wrap:wrap;gap:15px}.empty-inventory .device-icon{width:44px;height:44px}.empty-inventory .button{margin-left:0;width:100%}.cards{grid-template-columns:1fr}.guide-card .topline{margin-bottom:14px}.guide-card p{margin-bottom:14px}.bottom-note{align-items:flex-start;flex-wrap:wrap;padding:22px}.bottom-note .text-link{margin:0}.bottom-note>span{display:none}footer{flex-wrap:wrap;gap:12px 18px}footer>a:last-child{margin-left:auto}.page-head{padding-top:30px}.page-head h1{font-size:40px}.toolbar{flex-direction:column}.device-row{flex-wrap:wrap;gap:12px}.device-row .row-body{min-width:65%}.device-row>.button{margin-left:74px}.detail-layout,.settings-grid{grid-template-columns:1fr}.aside-panel{padding-bottom:0}.step-body{padding-left:0}.steps summary{font-size:13px}.steps summary .pill{font-size:9px}.page-head .section-heading{flex-wrap:wrap}.hero-actions{gap:15px}.scene-note{font-size:12px}.guide-card h3{font-size:25px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.scene-note{top:17px;left:0;right:0;text-align:center;font-size:12px}
+
+/* Requested palette */
+:root{--paper:#FFFFFF;--ink:#000000;--muted:#000000}
+body{background:#FFFFFF;color:#000000}
+header,footer,.page-head,.section-heading,.modal-head{background:#3C4E61;color:#000000}
+header{max-width:none;padding-left:max(24px,calc((100vw - 1184px)/2));padding-right:max(24px,calc((100vw - 1184px)/2))}
+footer{max-width:none;margin-left:0;margin-right:0;padding-left:max(24px,calc((100vw - 1184px)/2));padding-right:max(24px,calc((100vw - 1184px)/2))}
+.section-heading{padding:16px 20px;border-radius:5px}
+.page-head{padding:30px 24px;margin-top:24px;border-radius:5px}
+.modal-head{padding:12px;border-radius:5px}
+h1 em,.brand-dot,nav a,nav a.active,.text-link,.muted,.hero p,.section-heading p,.trust-strip,.trust-strip b,.empty-inventory p,.guide-card p,.card-bottom,.device-row p,.aside-panel p,.step-body p,.settings-panel p,.guide-intro,.empty,.danger,.bottom-note p,.scene-note,footer,footer .brand,.button,.pill.green,.pill.amber,.privacy-tag span{color:#000000}
+.dark,.dark:hover{background:#FFFFFF;color:#000000;border-color:#000000}
+#toast{background:#FFFFFF;color:#000000;border:1px solid #000000}
+.guide-card,dialog,input,select,textarea,.empty-inventory,.settings-panel,.bottom-note,.callout{background:#FFFFFF;color:#000000}
+
+/* Screenshot feedback: overview section titles and top navigation */
+.section > .section-heading{background:#FFFFFF;color:#3C4E61}
+.section > .section-heading h2,.section > .section-heading p,.section > .section-heading .text-link,.section > .section-heading .count{color:#3C4E61}
+header .brand,header .brand-dot,header nav a,header nav a.active,header .icon-button{color:#FFFFFF}
+header nav a.active{border-bottom-color:#FFFFFF}
+
+/* White footer text and branding */
+footer,footer .brand,footer a,footer span{color:#FFFFFF}
+
+/* Light contrast panels for inventory and guide page introductions */
+.page-head{background:#EAEAEA}
+.page-head .section-heading{background:transparent}
+
+/* Consistent orange treatment for action buttons */
+button:not(.guide-card):not(.icon-button){background:#B45E00;color:#FFFFFF;border-color:#B45E00}
+button:not(.guide-card):not(.icon-button):hover{background:#934C00;color:#FFFFFF;border-color:#934C00}
+button:not(.guide-card):not(.icon-button):focus-visible{outline-color:#3C4E61}
+button:not(.guide-card):not(.icon-button):disabled{background:#B45E00;color:#FFFFFF;opacity:.55}
+
+/* Separate checklist actions for easier scanning */
+.aside-panel button.text-link{display:flex;width:100%;align-items:center;justify-content:flex-start;text-align:left;white-space:normal;background:#EAEAEA;color:#3C4E61;border:1px solid #D8D8D8;border-radius:5px;padding:11px 14px;margin:8px 0;line-height:1.45}
+.aside-panel button.text-link:hover{background:#DCDCDC;color:#26394C;border-color:#C8C8C8}
+.aside-panel button.text-link.danger{color:#7A2C22}
+
+/* High contrast checklist step numbers */
+.step-num{background:#3C4E61;color:#FFFFFF;border-color:#3C4E61}
+
+
+/* Clear, centered hero without the decorative device illustration */
+.hero{display:block;min-height:0;padding:88px 24px 78px;text-align:center}
+.hero>.eyebrow{justify-content:center}
+.hero h1{max-width:900px;margin:24px auto 20px;font-size:clamp(46px,6vw,72px);line-height:1.08;letter-spacing:-2.5px}
+.hero>div:first-child>p{max-width:620px;margin:0 auto 27px}
+.hero-actions{justify-content:center}
+@media(max-width:600px){.hero{display:block;align-items:initial;padding:56px 12px 50px}.hero h1{font-size:clamp(42px,11vw,54px);letter-spacing:-1.8px}.hero-actions{justify-content:center;flex-wrap:wrap}}
+
+/* Subtle contrast for the benefits strip and tighter header-to-hero spacing */
+.trust-strip{background:#EAEAEA;border:0;border-radius:5px;padding:18px 24px;margin:0 0 8px}
+.hero{padding-top:38px}
+@media(max-width:600px){.hero{padding-top:34px}}
+
+/* Consistent breathing room after page intro sections */
+.page-head{margin-bottom:20px}
+
+/* Guide catalog: show useful examples before opening a checklist. */
+.card-preview{border-top:1px solid #EAEAEA;padding-top:12px;min-height:52px;color:#3C4E61!important}
+.card-preview strong{font-weight:700}
+.guides-more{display:flex;justify-content:flex-end;margin:20px 0 0}
+.guide-card:focus-visible{outline:3px solid #3C4E61;outline-offset:4px}
+.guide-card h3{overflow-wrap:anywhere}
+
+/* Settings actions have a clear hierarchy, with destructive actions set apart. */
+.settings-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 18px}
+.settings-panel .settings-actions .button{margin:0}
+button.button.secondary{background:#FFFFFF;color:#3C4E61;border:1px solid #3C4E61}
+button.button.secondary:hover{background:#EAEAEA;color:#26394C}
+button.text-link{background:transparent;color:#3C4E61;border:0;padding:2px 0;text-align:left;line-height:1.5}
+button.text-link:hover{background:transparent;text-decoration:underline}
+.settings-update{margin-bottom:4px!important}
+.settings-update .text-link{font-size:12px}
+.danger-panel{border-color:#D8A7A1!important;background:#FFF9F8!important}
+.danger-panel h2,.danger-panel>p:first-of-type{color:#6D2119!important}
+button.button.danger-button{background:#8D251C;color:#FFFFFF;border-color:#8D251C}
+button.button.danger-button:hover{background:#6D1D17;color:#FFFFFF;border-color:#6D1D17}
+.modal-actions .button{min-width:108px}
+@media(max-width:600px){.settings-actions{align-items:stretch;flex-direction:column}.settings-actions .button{width:100%}.card-preview{min-height:0}}
+
+/* Make page and section titles read as deliberate headlines. */
+h1,h2,.guide-card h3{color:#3C4E61;font-weight:700}
+.eyebrow{color:#3C4E61;font-weight:700}
+h1{font-size:clamp(46px,5vw,62px);line-height:1.02;letter-spacing:-1.8px}
+.hero h1{font-size:clamp(56px,6.5vw,80px);line-height:1.01;letter-spacing:-2.7px;max-width:920px;margin:22px auto 24px;text-wrap:balance}
+h1 em{color:#3C4E61}
+.page-head h1,.page-head .section-heading h1{font-size:clamp(48px,5.2vw,64px);line-height:1.02;letter-spacing:-1.8px;text-wrap:balance}
+.section-heading h2{font-size:36px;line-height:1.08;letter-spacing:-1px}
+.guide-card h3{font-size:26px;line-height:1.12;letter-spacing:-.45px}
+.settings-panel h2,.modal-head h2{font-size:29px;line-height:1.12;letter-spacing:-.55px}
+.empty h2{font-size:36px;line-height:1.1}
+@media(max-width:800px){.hero h1{font-size:clamp(48px,7vw,64px)}.section-heading h2{font-size:32px}}
+@media(max-width:600px){.page-head h1,.page-head .section-heading h1{font-size:clamp(42px,10vw,52px)}.hero h1{font-size:clamp(44px,11vw,56px);letter-spacing:-1.8px}.section-heading h2{font-size:30px}.empty h2{font-size:30px}}
+
+/* Give the Add Device dialog a consistent light-gray surface. */
+dialog#modal{background:#EAEAEA}
+#modal .modal-head,#modal .modal-actions,#modal .callout{background:#EAEAEA}
+
+/* Keep the footer at the viewport edge when a page has little content. */
+html{min-height:100%;scrollbar-gutter:stable}
+body{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+header{flex:0 0 auto}
+header{width:100%;margin-left:0;margin-right:0}
+main{flex:1 0 auto;min-height:0}
+footer{flex:0 0 auto}
+
+/* Give the device inventory a compact, task-focused heading. */
+.device-page-head{padding:20px 30px 22px}
+.device-page-head>.eyebrow{margin-bottom:8px}
+.device-page-head .section-heading{min-height:88px;padding:0;margin:0;align-items:center}
+.device-page-head .section-heading>div{flex:1;min-width:0}
+.device-page-head .section-heading h1{font-size:clamp(46px,4.8vw,58px);line-height:1.02;letter-spacing:-1.8px;margin:0 0 7px}
+.device-page-head .section-heading p{font-size:14px;line-height:1.45}
+.device-page-head .count{font-size:13px;padding:5px 10px}
+.device-page-head{padding:20px}
+
+/* Let the main column use the available width when the body is a flex layout. */
+main{width:100%}
+@media(max-width:1250px){main{width:calc(100% - 90px)}}
+@media(max-width:600px){main{width:calc(100% - 48px)}}
+
+/* Keep checklist utilities grouped and easy to activate. */
+.guide-actions{display:grid;gap:8px;margin-top:18px}
+.aside-panel .guide-actions button.text-link{display:flex;width:100%;min-height:44px;align-items:center;justify-content:flex-start;text-align:left;white-space:normal;background:#EAEAEA;color:#3C4E61;border:1px solid #D8D8D8;border-radius:5px;padding:10px 14px;margin:0;line-height:1.45}
+.aside-panel .guide-actions button.text-link:hover{background:#DCDCDC;color:#26394C;border-color:#C8C8C8}
+.aside-panel .guide-actions button.text-link:focus-visible{outline-color:#3C4E61}
+.source-panel{margin-top:36px;padding:24px 28px;border:1px solid #EAEAEA;border-radius:6px;background:#FFFFFF}
+.source-panel h2{font-size:26px;margin-bottom:10px}
+.source-panel p{max-width:850px;font-size:13px;line-height:1.65;margin-bottom:12px}
+.source-panel ul{padding-left:22px;margin:10px 0 14px;line-height:1.8}
+.source-panel a{color:#3C4E61;text-decoration:underline;text-underline-offset:2px}
+.source-panel .source-meta{font-size:12px;font-weight:700;margin-top:14px}
+.source-panel .source-note{font-size:11px;color:#454545;margin-top:9px;margin-bottom:0}
+@media(max-width:600px){.source-panel{margin-top:26px;padding:20px}.source-panel h2{font-size:23px}}
+@media(max-width:400px){dialog#modal{padding:18px;max-width:calc(100vw - 24px)}#modal .modal-head h2{font-size:25px}#modal .modal-actions{gap:8px}#modal .modal-actions .button{min-width:0;flex:1;padding:10px 12px;font-size:12px}.source-panel a{overflow-wrap:anywhere}}
+
+/* Make the device page heading compact and the empty state task-focused. */
+.device-page-head{padding:20px 30px}
+.device-page-head .section-heading{min-height:0}
+.device-page-head .section-heading h1{margin:0 0 7px}
+.inventory-empty{display:flex;align-items:center;gap:20px;min-height:0;padding:26px 30px;text-align:left;background:#FFFFFF;border:1px solid #EAEAEA;border-radius:6px;color:#000000}
+.inventory-empty .device-icon{width:54px;height:54px}
+.inventory-empty h2{font-size:26px;line-height:1.12;margin:0 0 5px}
+.inventory-empty p{font-size:14px;line-height:1.5;margin:0;color:#000000}
+@media(max-width:600px){.device-page-head{padding:18px 20px}.inventory-empty{gap:14px;padding:20px}.inventory-empty .device-icon{width:46px;height:46px}}
+
+/* Good Signal wordmark sizing */
+.brand{font-size:29px;letter-spacing:-1.2px;white-space:nowrap}
+
+/* Keep the app update control at the bottom of Offline Access. */
+.settings-panel button.settings-update-action{background:#EAEAEA;color:#3C4E61;border:1px solid #D8D8D8;border-radius:5px;margin-top:8px;padding:11px 14px}
+.settings-panel button.settings-update-action:hover{background:#DCDCDC;color:#26394C;border-color:#C8C8C8}
+.settings-panel button.settings-update-action:focus-visible{outline-color:#3C4E61}
+
+
+/* Keep the same settings and add actions grouped in the shared header. */
+.header-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.header-actions .button{margin:0;white-space:nowrap}
+.header-actions .header-settings{background:#B45E00;color:#FFFFFF;border-color:#B45E00}
+.header-actions .header-settings:hover{background:#934C00;color:#FFFFFF;border-color:#934C00}
+@media(max-width:600px){.header-actions{order:2;margin-left:auto;gap:8px}.header-actions .button{font-size:11px;padding:9px 11px}nav{order:3}}
+@media(max-width:360px){header{gap:10px}.header-actions{gap:6px}.header-actions .button{font-size:10px;padding:8px 8px}.brand{font-size:25px;letter-spacing:-1px}.brand-mark{font-size:24px;margin-right:6px}}
+
+/* Mobile hierarchy: shorten the stacked header and keep actions easy to tap. */
+@media(max-width:600px){
+  header{padding-top:12px;gap:8px}
+  nav a{min-height:44px;display:flex;align-items:center;padding:10px 0}
+  .header-actions .button{min-height:44px}
+  .hero{padding:24px 0 30px;gap:22px}
+  .hero h1{font-size:clamp(36px,10vw,42px);line-height:1.04;letter-spacing:-1.35px;margin:10px 0 16px}
+  .hero p{font-size:14px;line-height:1.65;margin-bottom:18px}
+  .hero-actions{gap:12px}
+  .page-head h1,.page-head .section-heading h1{font-size:clamp(34px,9vw,40px);line-height:1.08;letter-spacing:-1.15px}
+}
+@media(max-width:360px){.hero{padding-top:20px}.hero h1{font-size:36px}.page-head h1,.page-head .section-heading h1{font-size:34px}}
+
+/* Mobile header: keep the wordmark, settings, and primary action on one line. */
+.mobile-settings-icon{display:none}
+@media(max-width:600px){
+  header{padding:12px 16px 0;gap:8px}
+  header>.brand{font-size:26px;letter-spacing:-1.2px;margin-right:0;flex:0 1 auto;min-width:0}
+  header>.brand .brand-mark{font-size:24px;margin-right:5px}
+  .header-actions{order:2;margin-left:auto;gap:8px;flex:0 0 auto}
+  .header-actions .header-settings{width:42px;height:44px;min-height:44px;padding:0;font-size:0}
+  .settings-label{display:none}
+  .mobile-settings-icon{display:block;font-size:17px;line-height:1}
+  .header-actions .global-add{min-height:44px;padding:8px 11px;font-size:11px}
+  nav{order:3;width:100%;justify-content:space-between;gap:8px}
+  nav a{min-height:44px;padding:10px 0;display:flex;align-items:center;font-size:11px;white-space:nowrap}
+}
+@media(max-width:380px){
+  header{padding-left:14px;padding-right:14px;gap:7px}
+  header>.brand{font-size:22px;letter-spacing:-1px}
+  header>.brand .brand-mark{font-size:20px;margin-right:4px}
+  .header-actions{gap:6px}
+  .header-actions .header-settings{width:40px;height:44px}
+  .header-actions .global-add{padding:8px 9px;font-size:10px}
+  nav a{font-size:10px}
+}
+
+/* Good Signal mark: use the selected controlled-signal icon across the site. */
+.brand{display:inline-flex;align-items:center;gap:8px}
+.brand-icon{display:block;width:36px;height:36px;flex:none;border-radius:50%}
+@media(max-width:600px){.brand-icon{width:32px;height:32px}}
+@media(max-width:380px){.brand-icon{width:28px;height:28px}}
+@media(max-width:800px){.hero{min-height:0;padding-bottom:18px}}
+
+/* Alternate the guide cards with tactile brand-color surfaces. */
+.cards .guide-card:nth-child(odd),
+.cards .guide-card:nth-child(odd):hover{background:#3C4E61;color:#FFFFFF;border-color:#3C4E61}
+.cards .guide-card:nth-child(even),
+.cards .guide-card:nth-child(even):hover{background:#B45E00;color:#FFFFFF;border-color:#B45E00}
+.cards .guide-card:nth-child(odd) h3,
+.cards .guide-card:nth-child(even) h3,
+.cards .guide-card:nth-child(odd) p,
+.cards .guide-card:nth-child(even) p,
+.cards .guide-card:nth-child(odd) .card-bottom,
+.cards .guide-card:nth-child(even) .card-bottom{color:#FFFFFF}
+.cards .guide-card:nth-child(odd) .card-preview,
+.cards .guide-card:nth-child(even) .card-preview{color:#FFFFFF!important;border-top-color:rgba(255,255,255,.35)}
+.cards .guide-card .device-icon{border-color:rgba(255,255,255,.58)}
+.cards .guide-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(60,78,97,.18)}
+.cards .guide-card:active{transform:translateY(-1px) scale(.99)}
+.cards .guide-card:nth-child(odd):focus-visible{outline-color:#FFFFFF}
+.cards .guide-card:nth-child(even):focus-visible{outline-color:#3C4E61}
+
+/* Guide coverage, verification labels, and editorial report flow. */
+.guide-coverage{margin:20px 0 26px;padding:22px 24px;background:#EAEAEA;border-radius:8px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 18px}
+.guide-coverage>div{display:flex;align-items:baseline;gap:9px}
+.guide-coverage>div strong{font-family:Georgia,serif;font-size:28px;color:#3C4E61}
+.guide-coverage>div span{font-size:13px;font-weight:700}
+.guide-coverage>p,.guide-coverage>details{grid-column:1/-1;margin:0}
+.guide-coverage>p{font-size:13px}
+.guide-coverage details{border-top:1px solid #d3d3d3;padding-top:12px}
+.guide-coverage summary,.report-context summary{font-weight:700;cursor:pointer}
+.guide-coverage details p{max-width:980px;font-size:13px;margin:10px 0 0}
+#guide-report-form .report-guide-name{padding:12px 14px;background:#EAEAEA;border-radius:6px}
+#guide-report-form .report-context{margin:14px 0;padding:12px 14px;background:#EAEAEA;border-radius:6px}
+#guide-report-form .report-context p{font-size:12px}
+#guide-report-form .modal-actions{flex-wrap:wrap}
+@media(max-width:600px){.guide-coverage{grid-template-columns:1fr;gap:2px;padding:18px}.guide-coverage>div{gap:10px}.guide-coverage>div strong{font-size:24px}.guide-coverage>p{margin-top:10px}.guide-coverage details{margin-top:8px}}
+
+/* Versioned guide feed, change summaries, and saved guide history. */
+.guide-coverage .catalog-freshness{margin-top:4px;padding:10px 12px;background:#fff;border-radius:6px}
+.guide-change-summary{margin:16px 0;padding:14px 18px;background:#fff4df;border-left:4px solid #B45E00;border-radius:4px;font-size:13px}
+.guide-history{margin:24px 0;padding:16px 20px;border:1px solid #EAEAEA;border-radius:8px;background:#fff}
+.guide-history ul{padding-left:22px}
+.guide-history li+li{margin-top:14px}
+.guide-history p{margin:4px 0;font-size:13px}
+.offline-model-note{margin:20px 0;padding:16px 20px;background:#EAEAEA;border-radius:8px}
+.offline-model-note p{margin:4px 0 10px;font-size:13px}
+.offline-model-note .button{margin-top:4px}
+
+.guide-card .card-version{font-size:10px;line-height:1.35;opacity:.9}
+
+/* Guide-card metadata stays labeled and easy to scan while resizing. */
+.cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card-bottom{display:grid;grid-template-columns:minmax(0,1fr) 24px;align-items:end;justify-content:initial;gap:10px 12px;margin-top:16px}
+.card-meta-row{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-width:0;line-height:1.35}
+.card-meta-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.78}
+.card-meta-value{font-size:11px;line-height:1.4;overflow-wrap:anywhere}
+.card-arrow{grid-column:2;grid-row:1/3;align-self:end;justify-self:end;font-size:16px;line-height:1;padding:3px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.cards{grid-template-columns:minmax(0,1fr)}.card-bottom{gap:8px 12px}}
+
+.settings-panel progress{display:block;width:100%;height:10px;margin:8px 0 14px;accent-color:#3C4E61}.settings-panel .storage-warning{padding:10px 12px;border-radius:5px;background:#EAEAEA;color:#3C4E61!important}.settings-panel .storage-warning[hidden]{display:none}
+#update-ready{position:fixed;bottom:0;left:0;right:0;z-index:24;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;background:#EAEAEA;border-top:1px solid #d4d4d4;padding:12px 18px;color:#3C4E61;font-size:13px}#update-ready[hidden]{display:none}#update-ready button{margin:0}#update-ready button:disabled{opacity:.5}
+
+.device-row > a.button{background:#B45E00;color:#FFFFFF;border-color:#B45E00}.device-row > a.button:hover{background:#994F00;color:#FFFFFF;border-color:#994F00}
+
+.device-row-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap;margin-left:auto}.device-row-actions .button{white-space:nowrap}.device-row-actions .danger-button{background:#8D251C;color:#FFFFFF;border-color:#8D251C}.device-row-actions .danger-button:hover{background:#6D1D17;color:#FFFFFF;border-color:#6D1D17}@media(max-width:700px){.device-row-actions{width:100%;justify-content:flex-start;margin-left:74px}}@media(max-width:420px){.device-row-actions{margin-left:0}.device-row-actions .button{padding:9px 11px;font-size:12px}}
+
+/* Keep keyboard focus clearly visible on dark navigation and alternating guide cards. */
+header :focus-visible,footer :focus-visible{outline-color:#FFFFFF}.cards .guide-card:nth-child(odd):focus-visible,.cards .guide-card:nth-child(even):focus-visible{outline-color:#3C4E61}
+
+/* Fallback for iOS versions without the native modal dialog API. */
+body.modal-fallback::before{content:"";position:fixed;inset:0;background:#291c1855;backdrop-filter:blur(4px);z-index:100}
+body.modal-fallback dialog#modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);margin:0;z-index:101}
+
+.detail-layout > div > .callout{background:#EAEAEA}

@@ -1,0 +1,1267 @@
+{
+  "schemaVersion": 1,
+  "feedVersion": 1,
+  "guideVersion": "1.3",
+  "publishedAt": "2026-11-02",
+  "reviewedAt": "November 2, 2026",
+  "changeLog": [
+    {
+      "from": "1.2",
+      "to": "1.3",
+      "summary": "Introduced a versioned guide catalog. Checklist content and stable step identifiers are unchanged.",
+      "material": false
+    }
+  ],
+  "migrations": [
+    {
+      "from": "1.2",
+      "to": "1.3",
+      "summary": "Catalog migration; no checklist content changes.",
+      "byCategory": {},
+      "material": false
+    }
+  ],
+  "modelGuides": [],
+  "guides": [
+    {
+      "id": "tv",
+      "name": "Smart TV",
+      "summary": "Review voice features, viewing data, and ad choices.",
+      "cardDescription": "Review voice controls, viewing data, and personalized advertising.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        }
+      ],
+      "steps": [
+        {
+          "id": "microphone",
+          "title": "Microphones & voice assistants",
+          "purpose": "Understand which voice features are available and decide when they can be used.",
+          "instructions": [
+            "Check the product manual and any paired remote for microphones or voice assistant features. Do not assume a microphone is present.",
+            "If supported, review the physical mute switch and voice activation controls. Choose the options that suit your household.",
+            "Record anything you cannot verify as unresolved."
+          ],
+          "tradeoff": "Disabling voice features may prevent hands-free commands or voice search."
+        },
+        {
+          "id": "history",
+          "title": "Voice recordings & history",
+          "purpose": "Review whether a linked account stores voice interactions.",
+          "instructions": [
+            "If your device uses a voice assistant, open its companion app or account privacy controls.",
+            "Look for options to review or delete voice history and manage future storage.",
+            "If no voice assistant is used, mark this check not applicable."
+          ],
+          "tradeoff": "Deleting history may reduce personalization; account controls may need an internet connection."
+        },
+        {
+          "id": "telemetry",
+          "title": "Usage & diagnostic data",
+          "purpose": "Make an informed choice about optional usage reporting.",
+          "instructions": [
+            "Check the device settings and manual for diagnostics, analytics, or usage reporting.",
+            "Read what each available option shares and disable optional reporting if you prefer.",
+            "If you cannot find or verify a control, record it as unresolved."
+          ],
+          "tradeoff": "Optional diagnostics may help the manufacturer troubleshoot problems. Some necessary service data may still be processed."
+        },
+        {
+          "id": "advertising",
+          "title": "Advertising & personalization",
+          "purpose": "Review how activity is used for personalized advertising.",
+          "instructions": [
+            "Look for advertising preferences in device settings and linked accounts.",
+            "Review personalized ads, advertising identifiers, and any available reset options.",
+            "On smart TVs, also look for viewing information or automatic content recognition controls in the manual."
+          ],
+          "tradeoff": "Turning off personalization does not remove advertisements or necessarily stop all data collection."
+        },
+        {
+          "id": "accessories",
+          "title": "Connected devices & accessories",
+          "purpose": "Understand the capabilities of accessories connected to this device.",
+          "instructions": [
+            "Review paired remotes, speakers, headphones, and other accessories.",
+            "Check each accessory\u2019s documentation for microphone capabilities. Record unknown capabilities in your notes.",
+            "Remove pairings you no longer use and review discovery options where available."
+          ],
+          "tradeoff": "Removing pairings stops those accessories from connecting until paired again."
+        },
+        {
+          "id": "permissions",
+          "title": "Companion app permissions",
+          "purpose": "Limit app access to information and features you do not need.",
+          "instructions": [
+            "Open your phone or tablet settings for the device\u2019s companion app.",
+            "Review microphone, location, contacts, and nearby-device permissions.",
+            "Turn off optional access you do not need and check that your essential features still work."
+          ],
+          "tradeoff": "Some permissions may be needed for initial setup, discovery, or specific app features."
+        },
+        {
+          "id": "updates",
+          "title": "Updates & a final review",
+          "purpose": "Keep a record of your choices and revisit them after updates.",
+          "instructions": [
+            "Check the manufacturer\u2019s instructions for software updates.",
+            "After an update, revisit your privacy choices and note any changed controls.",
+            "Export a backup of your checklist so you have a copy outside this browser."
+          ],
+          "tradeoff": "Updates may change menus and available options. A completed checklist is a record of your review, not a privacy guarantee."
+        }
+      ]
+    },
+    {
+      "id": "speaker",
+      "name": "Smart speaker",
+      "summary": "Review voice features, recordings, accounts, and app access.",
+      "cardDescription": "Understand microphones, voice history, and connected accounts.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "FTC: How to secure your voice assistant and protect your privacy",
+          "url": "https://consumer.ftc.gov/articles/how-secure-your-voice-assistant-protect-your-privacy"
+        }
+      ],
+      "steps": [
+        {
+          "id": "microphone",
+          "title": "Voice assistant & microphone",
+          "purpose": "Check whether this speaker has a microphone or voice assistant before changing its controls.",
+          "instructions": [
+            "Check the speaker and its documentation for a microphone, voice button, or wake word. Presence and controls vary by model.",
+            "If supported, review mute and voice activation controls and choose the settings you prefer.",
+            "If you cannot confirm the capability, mark it unresolved."
+          ],
+          "tradeoff": "Muting the microphone or disabling voice control can turn off hands-free requests."
+        },
+        {
+          "id": "history",
+          "title": "Voice recordings & history",
+          "purpose": "Review what a linked assistant account may retain.",
+          "instructions": [
+            "Identify which voice assistant account is connected, if any.",
+            "Use that assistant\u2019s official privacy controls to review recording history, deletion, and future storage options.",
+            "If no assistant is connected or the feature is absent, mark this not applicable."
+          ],
+          "tradeoff": "Deleting history may reduce personalization and may require access to the assistant account."
+        },
+        {
+          "id": "speaker-account",
+          "title": "Linked accounts & services",
+          "purpose": "Limit the services and personal information connected to the speaker.",
+          "instructions": [
+            "Review music, shopping, home-control, and other linked services in the companion app.",
+            "Remove services or household profiles you no longer use.",
+            "Check the privacy controls of each service separately; they may have their own retention settings."
+          ],
+          "tradeoff": "Removing a service can disable its voice commands or personalized features."
+        },
+        {
+          "id": "telemetry",
+          "title": "Diagnostics & usage data",
+          "purpose": "Review optional device performance and usage reporting.",
+          "instructions": [
+            "Check the device manual and settings for diagnostics, analytics, or usage reporting.",
+            "Read the available choices and turn off optional reporting if you prefer.",
+            "Record controls you cannot find as unresolved."
+          ],
+          "tradeoff": "Optional diagnostics can help troubleshoot issues; essential service data may still be processed."
+        },
+        {
+          "id": "accessories",
+          "title": "Connected accessories",
+          "purpose": "Check microphones and access on paired devices.",
+          "instructions": [
+            "Review phones, tablets, remotes, or other devices paired with the speaker.",
+            "Check each accessory\u2019s manual for its own microphone and voice controls.",
+            "Remove old pairings you no longer use."
+          ],
+          "tradeoff": "Removing a pairing means you will need to pair that accessory again to use it."
+        },
+        {
+          "id": "permissions",
+          "title": "Companion app permissions",
+          "purpose": "Limit what the phone app can access.",
+          "instructions": [
+            "Open your phone\u2019s settings for the speaker\u2019s companion app.",
+            "Review microphone, nearby-device, contacts, and location permissions.",
+            "Turn off access you do not need, then check the features you rely on."
+          ],
+          "tradeoff": "Setup, discovery, calling, or location features may need specific permissions."
+        },
+        {
+          "id": "updates",
+          "title": "Updates & privacy review",
+          "purpose": "Revisit your choices after software or app updates.",
+          "instructions": [
+            "Check the manufacturer\u2019s update guidance.",
+            "After an update, review voice, account, and data-sharing settings again.",
+            "Save a note of anything that changed."
+          ],
+          "tradeoff": "Menus and options can change with software updates; this checklist is a record of your review, not a privacy guarantee."
+        }
+      ]
+    },
+    {
+      "id": "stream",
+      "name": "Streaming device",
+      "summary": "Review account activity, ads, apps, and connections.",
+      "cardDescription": "Take a closer look at ad preferences, app permissions, and usage data.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        }
+      ],
+      "steps": [
+        {
+          "id": "microphone",
+          "title": "Remote voice search & microphones",
+          "purpose": "Determine whether this streaming device or remote supports voice input.",
+          "instructions": [
+            "Check the remote and device manual for a microphone or voice-search button. Do not assume one is present.",
+            "If supported, review voice activation controls and what account receives voice requests.",
+            "If absent or unverified, record not applicable or unresolved as appropriate."
+          ],
+          "tradeoff": "Disabling voice search may mean using the on-screen keyboard or app remote."
+        },
+        {
+          "id": "telemetry",
+          "title": "Viewing & usage information",
+          "purpose": "Review optional viewing, diagnostics, and recommendation data.",
+          "instructions": [
+            "Look in device settings and the manufacturer\u2019s privacy documentation for viewing activity, usage data, and diagnostics.",
+            "Review available controls for activity-based recommendations or optional reporting.",
+            "Record options that are unavailable or unclear."
+          ],
+          "tradeoff": "Disabling activity-based recommendations may make suggestions less personalized; it does not necessarily stop all data processing."
+        },
+        {
+          "id": "advertising",
+          "title": "Advertising preferences",
+          "purpose": "Review ad personalization and advertising identifiers where offered.",
+          "instructions": [
+            "Check settings on the streaming device and its linked account.",
+            "Review personalized advertising or advertising identifier controls if available.",
+            "Keep in mind that turning off personalization may not remove ads."
+          ],
+          "tradeoff": "Ads may continue to appear, and a reset identifier does not necessarily stop all collection."
+        },
+        {
+          "id": "stream-account",
+          "title": "Account & profile privacy",
+          "purpose": "Check account profiles and viewing history.",
+          "instructions": [
+            "Review which account and profiles are signed in on this device.",
+            "Remove profiles you no longer need and use the provider\u2019s controls to review viewing history.",
+            "Use official account privacy settings for retention and activity controls."
+          ],
+          "tradeoff": "Removing a profile or clearing history may affect recommendations and access on this device."
+        },
+        {
+          "id": "permissions",
+          "title": "Installed app permissions",
+          "purpose": "Review information available to apps on the streaming device.",
+          "instructions": [
+            "Review installed apps and the permissions or data-sharing choices the device exposes.",
+            "Remove apps you no longer use.",
+            "For account-level privacy and retention, consult each app provider\u2019s official controls."
+          ],
+          "tradeoff": "Removing an app or limiting its access can disable its features until you reinstall or sign in again."
+        },
+        {
+          "id": "connectivity",
+          "title": "Casting & device connections",
+          "purpose": "Review how phones and other household devices can connect.",
+          "instructions": [
+            "Check settings for casting, device discovery, remote-app connections, and guest access.",
+            "Disable discovery options you do not use and remove old paired devices.",
+            "Confirm the controls in your model\u2019s manual."
+          ],
+          "tradeoff": "Disabling discovery may prevent phones or smart-home devices from finding the streamer."
+        },
+        {
+          "id": "updates",
+          "title": "Updates & a final review",
+          "purpose": "Recheck privacy choices when the device software changes.",
+          "instructions": [
+            "Check how the manufacturer delivers software updates.",
+            "After an update, review account, advertising, app, and connection settings.",
+            "Record unresolved questions for later."
+          ],
+          "tradeoff": "Updates may move or change settings. A completed checklist does not certify a device as private."
+        }
+      ]
+    },
+    {
+      "id": "soundbar",
+      "name": "Soundbar",
+      "summary": "Review voice features, accessories, app access, and updates.",
+      "cardDescription": "Review voice features, paired accessories, and connectivity.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "FTC: How to secure your voice assistant and protect your privacy",
+          "url": "https://consumer.ftc.gov/articles/how-secure-your-voice-assistant-protect-your-privacy"
+        }
+      ],
+      "steps": [
+        {
+          "id": "microphone",
+          "title": "Voice features & microphones",
+          "purpose": "Check whether the soundbar itself or its remote supports voice input.",
+          "instructions": [
+            "Review the soundbar and remote documentation for microphones, wake words, or voice assistant support.",
+            "If available, locate mute and voice activation controls.",
+            "Check connected devices separately; an attached TV may have its own voice features."
+          ],
+          "tradeoff": "Disabling voice controls can remove hands-free commands or voice search."
+        },
+        {
+          "id": "history",
+          "title": "Voice assistant history",
+          "purpose": "Review account storage when a voice assistant is connected.",
+          "instructions": [
+            "Identify any voice assistant linked to the soundbar or a connected TV.",
+            "Review recording history and retention in the assistant provider\u2019s official account controls.",
+            "If no assistant is connected, mark this not applicable."
+          ],
+          "tradeoff": "Deleting history may change personalization and must often be done through the linked account."
+        },
+        {
+          "id": "accessories",
+          "title": "Paired devices & microphones",
+          "purpose": "Understand what paired remotes, phones, and accessories can do.",
+          "instructions": [
+            "Review Bluetooth pairings and other connected audio accessories.",
+            "Check each accessory\u2019s documentation for microphones and voice controls.",
+            "Remove unused pairings and note any capability you cannot verify."
+          ],
+          "tradeoff": "Removing a pairing stops automatic connection until you pair the accessory again."
+        },
+        {
+          "id": "telemetry",
+          "title": "Diagnostics & usage data",
+          "purpose": "Review optional product diagnostics and usage reporting.",
+          "instructions": [
+            "Look in the manual, companion app, and device settings for diagnostics or analytics controls.",
+            "Review what is shared and turn off optional reporting if you prefer.",
+            "If no control is documented, mark the step unresolved rather than assuming."
+          ],
+          "tradeoff": "Optional reporting may help troubleshoot audio issues; service data may still be processed."
+        },
+        {
+          "id": "permissions",
+          "title": "Companion app permissions",
+          "purpose": "Limit the soundbar app\u2019s access on your phone.",
+          "instructions": [
+            "Open your phone settings for the soundbar\u2019s companion app.",
+            "Review nearby-device, microphone, contacts, and location permissions.",
+            "Turn off access you do not need and check the features you use."
+          ],
+          "tradeoff": "Pairing, room calibration, voice setup, or discovery may depend on certain permissions."
+        },
+        {
+          "id": "connectivity",
+          "title": "Network & connected services",
+          "purpose": "Review network access and services linked to the soundbar.",
+          "instructions": [
+            "Check which network and streaming or voice services are connected.",
+            "Remove accounts and services you no longer use.",
+            "Review privacy choices with each connected service provider."
+          ],
+          "tradeoff": "Disconnecting a service or network can disable streaming, remote control, or software updates."
+        },
+        {
+          "id": "updates",
+          "title": "Updates & a final review",
+          "purpose": "Revisit soundbar privacy choices after firmware changes.",
+          "instructions": [
+            "Check the manufacturer\u2019s instructions for firmware updates.",
+            "After an update, review voice, pairing, app, and network choices.",
+            "Record settings that moved or changed."
+          ],
+          "tradeoff": "Menus can change after updates. This checklist records your review; it does not certify a device."
+        }
+      ]
+    },
+    {
+      "id": "headphones",
+      "name": "Headphones & Bluetooth",
+      "summary": "Review microphones, pairings, app access, and device finding.",
+      "cardDescription": "Check microphones, paired devices, and companion app access.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "FTC: How to secure your voice assistant and protect your privacy",
+          "url": "https://consumer.ftc.gov/articles/how-secure-your-voice-assistant-protect-your-privacy"
+        }
+      ],
+      "steps": [
+        {
+          "id": "microphone",
+          "title": "Microphone & voice assistant",
+          "purpose": "Check how headset microphones and voice assistants are activated.",
+          "instructions": [
+            "Review the headphones\u2019 manual for microphone, voice assistant, and call controls.",
+            "Check both headset buttons and phone voice-assistant settings.",
+            "If you cannot verify when the microphone is active, record that question."
+          ],
+          "tradeoff": "Disabling voice activation can remove hands-free assistant commands; the microphone may still work for calls."
+        },
+        {
+          "id": "history",
+          "title": "Voice assistant history",
+          "purpose": "Review retention through the phone or assistant account.",
+          "instructions": [
+            "If the headphones invoke a phone or cloud voice assistant, identify the account that handles requests.",
+            "Review history and deletion controls in that provider\u2019s official privacy settings.",
+            "If no assistant is used, mark this not applicable."
+          ],
+          "tradeoff": "History controls are usually managed by the connected phone or account, not the headphones."
+        },
+        {
+          "id": "permissions",
+          "title": "Companion app permissions",
+          "purpose": "Limit the headphone app\u2019s access to your phone data.",
+          "instructions": [
+            "Open your phone settings for the headphone companion app.",
+            "Review nearby-device, location, microphone, contacts, and motion permissions if listed.",
+            "Disable permissions you do not need and check pairing and audio features."
+          ],
+          "tradeoff": "Some permissions may support setup, device finding, or optional sound features."
+        },
+        {
+          "id": "accessories",
+          "title": "Bluetooth pairing & discovery",
+          "purpose": "Keep track of devices that can connect to the headphones.",
+          "instructions": [
+            "Review saved Bluetooth pairings on your phone and other devices.",
+            "Remove devices you no longer use and check whether the headphones have a pairing or discoverability mode.",
+            "Use the manual to understand how pairing mode is activated."
+          ],
+          "tradeoff": "Removing a device means you must pair it again before it can play audio."
+        },
+        {
+          "id": "telemetry",
+          "title": "Diagnostics & product usage",
+          "purpose": "Review optional product analytics and diagnostic sharing.",
+          "instructions": [
+            "Check the companion app and manufacturer privacy notice for diagnostics, crash reports, or usage analytics.",
+            "Review available choices and disable optional reporting if you prefer.",
+            "If no choice is offered, note that rather than assuming sharing is off."
+          ],
+          "tradeoff": "Optional diagnostics may help improve or troubleshoot the product."
+        },
+        {
+          "id": "headphone-location",
+          "title": "Location & device-finding features",
+          "purpose": "Understand any location access or find-my-device feature.",
+          "instructions": [
+            "Check whether the app offers a last-seen location or device-finding feature.",
+            "Review the app\u2019s location permission and your phone\u2019s location history controls.",
+            "If no location feature exists, mark the step not applicable."
+          ],
+          "tradeoff": "Turning off location can disable device-finding features; phone operating systems may retain their own location records."
+        },
+        {
+          "id": "updates",
+          "title": "Firmware & app updates",
+          "purpose": "Revisit controls after headphone firmware or companion app updates.",
+          "instructions": [
+            "Check the manufacturer\u2019s update guidance and whether updates use the companion app.",
+            "After an update, review permissions, voice, pairing, and diagnostics settings again.",
+            "Record any changed controls or unresolved questions."
+          ],
+          "tradeoff": "Updates can change menus or features. A completed checklist is not a privacy certification."
+        }
+      ]
+    },
+    {
+      "id": "router",
+      "name": "Wi-Fi router & home hub",
+      "summary": "Review administrator access, connected devices, remote access, and updates.",
+      "cardDescription": "Check who can manage your network, which devices connect, and what is shared.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "CISA: 5 steps to protecting your digital home",
+          "url": "https://www.cisa.gov/sites/default/files/publications/NCSAM_YourDigitalHome_2020.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "id": "router-admin",
+          "title": "Administrator access",
+          "purpose": "Keep router management limited to people you trust.",
+          "instructions": [
+            "Review administrator accounts and remove old or unused access.",
+            "Change any default administrator password using the router\u2019s official instructions.",
+            "Use a unique password and enable stronger sign-in protection if offered."
+          ],
+          "tradeoff": "Anyone with administrator access may be able to change network settings or view connected devices."
+        },
+        {
+          "id": "router-devices",
+          "title": "Connected devices & guests",
+          "purpose": "Know which devices and visitors use your network.",
+          "instructions": [
+            "Review the connected-device list and identify unfamiliar entries before taking action.",
+            "Remove access for devices you no longer use.",
+            "Review guest network access and turn it off when it is not needed."
+          ],
+          "tradeoff": "Removing a device may interrupt its connection until you add it again."
+        },
+        {
+          "id": "router-remote",
+          "title": "Remote management & cloud accounts",
+          "purpose": "Understand whether router controls are available away from home.",
+          "instructions": [
+            "Check whether a cloud account or remote-management feature is enabled.",
+            "Review who can sign in to that account and remove access you no longer need.",
+            "Disable remote access if you do not use it, following the router\u2019s instructions."
+          ],
+          "tradeoff": "Remote management can be useful when away from home but adds another way to reach network settings."
+        },
+        {
+          "id": "router-logging",
+          "title": "Network logs & diagnostics",
+          "purpose": "Review what activity and performance data the router keeps or shares.",
+          "instructions": [
+            "Look for diagnostics, usage reports, traffic history, or analytics in settings and documentation.",
+            "Review available choices and disable optional sharing if you prefer.",
+            "Record features you cannot verify instead of assuming they are off."
+          ],
+          "tradeoff": "Turning off optional reports may limit troubleshooting information; basic service data may still be processed."
+        },
+        {
+          "id": "router-security",
+          "title": "Wi-Fi security & sharing",
+          "purpose": "Check how your network is protected and shared.",
+          "instructions": [
+            "Use the manufacturer\u2019s guidance to review the current Wi-Fi security mode.",
+            "Review saved network access and change the Wi-Fi password if it has been shared widely.",
+            "Check whether device discovery or local sharing features are enabled."
+          ],
+          "tradeoff": "Changing Wi-Fi settings can disconnect household devices until they reconnect."
+        },
+        {
+          "id": "router-dns",
+          "title": "DNS & filtering services",
+          "purpose": "Understand services that can see or filter network requests.",
+          "instructions": [
+            "Check whether the router uses a custom DNS provider, parental controls, or filtering service.",
+            "Review the provider and account settings for data-retention information.",
+            "Change these options only if you understand how they affect browsing and household controls."
+          ],
+          "tradeoff": "Changing DNS or filtering can affect access, safety filters, and network troubleshooting."
+        },
+        {
+          "id": "router-updates",
+          "title": "Firmware & app updates",
+          "purpose": "Keep a record of router updates and revisit important choices afterward.",
+          "instructions": [
+            "Check how the manufacturer announces and installs router updates.",
+            "Review automatic update and notification options.",
+            "After a firmware update, revisit administrator, remote-access, and sharing settings."
+          ],
+          "tradeoff": "Updates may move settings or change features; the checklist records your review and does not certify security."
+        }
+      ]
+    },
+    {
+      "id": "camera",
+      "name": "Smart camera & doorbell",
+      "summary": "Review recording, storage, sharing, motion features, and app access.",
+      "cardDescription": "Understand recording controls, account sharing, notifications, and storage.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "FTC: How to secure your home security cameras",
+          "url": "https://consumer.ftc.gov/articles/how-secure-your-home-security-cameras"
+        }
+      ],
+      "steps": [
+        {
+          "id": "camera-recording",
+          "title": "Recording & activity zones",
+          "purpose": "Choose when the camera records and which areas it covers.",
+          "instructions": [
+            "Review motion, sound, and continuous-recording options in the app.",
+            "Check activity or privacy zones and exclude areas you do not want monitored.",
+            "Confirm whether the camera has a physical privacy shutter or indicator."
+          ],
+          "tradeoff": "Reducing recording can mean missing events you wanted the camera to capture."
+        },
+        {
+          "id": "camera-storage",
+          "title": "Video storage & retention",
+          "purpose": "Find out where recordings are stored and how long they remain available.",
+          "instructions": [
+            "Check whether clips are stored locally, with a subscription, or in a cloud account.",
+            "Review automatic deletion and retention settings.",
+            "Use the provider\u2019s official controls to delete clips you no longer need."
+          ],
+          "tradeoff": "Shorter retention or local-only storage may limit access to older clips or remote playback."
+        },
+        {
+          "id": "camera-sharing",
+          "title": "Household sharing",
+          "purpose": "Limit who can see live video, recordings, or camera controls.",
+          "instructions": [
+            "Review household members, shared users, and active sessions.",
+            "Remove access for people who no longer need it.",
+            "Check whether shared users can view recordings, change settings, or invite others."
+          ],
+          "tradeoff": "Removing a shared user also removes their viewing and control access."
+        },
+        {
+          "id": "camera-sensors",
+          "title": "Microphone, audio & other sensors",
+          "purpose": "Check which sensors the camera uses, beyond video.",
+          "instructions": [
+            "Review microphone, speaker, sound detection, and any other sensor features.",
+            "Turn off audio or sensor features you do not need, where controls are offered.",
+            "Check for a physical control and note anything you cannot verify."
+          ],
+          "tradeoff": "Disabling audio or detection features may reduce alerts or two-way communication."
+        },
+        {
+          "id": "camera-alerts",
+          "title": "Motion alerts & notifications",
+          "purpose": "Choose which activity produces an alert and where alerts appear.",
+          "instructions": [
+            "Review motion and sound detection sensitivity and schedules.",
+            "Check whether alerts include preview images or other details on your phone\u2019s lock screen.",
+            "Limit notifications to events and times that are useful to you."
+          ],
+          "tradeoff": "Fewer alerts can reduce interruptions but may mean you notice an event later."
+        },
+        {
+          "id": "camera-integrations",
+          "title": "Connected services & voice assistants",
+          "purpose": "Review other apps or services that can access the camera.",
+          "instructions": [
+            "Check linked voice assistants, smart-home services, and automation integrations.",
+            "Remove connections you no longer use.",
+            "Review each linked service\u2019s account and video-history controls separately."
+          ],
+          "tradeoff": "Disconnecting a service can stop routines, voice commands, or shared notifications."
+        },
+        {
+          "id": "camera-updates",
+          "title": "App, account & firmware review",
+          "purpose": "Recheck camera privacy choices after app or firmware changes.",
+          "instructions": [
+            "Review app permissions for camera management on your phone.",
+            "Check for firmware and companion-app updates using official channels.",
+            "After updates, revisit recording, sharing, and storage choices."
+          ],
+          "tradeoff": "Updates can change menus and features; a completed checklist is not a privacy guarantee."
+        }
+      ]
+    },
+    {
+      "id": "display",
+      "name": "Smart display",
+      "summary": "Review camera and microphone controls, accounts, sensors, and sharing.",
+      "cardDescription": "Check voice and camera controls, connected accounts, and ambient features.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "FTC: How to secure your voice assistant and protect your privacy",
+          "url": "https://consumer.ftc.gov/articles/how-secure-your-voice-assistant-protect-your-privacy"
+        }
+      ],
+      "steps": [
+        {
+          "id": "display-camera",
+          "title": "Camera & physical privacy controls",
+          "purpose": "Understand when the display\u2019s camera can be used.",
+          "instructions": [
+            "Check the manual for camera, shutter, indicator-light, and video-call features.",
+            "Review app and account settings for camera use and sharing.",
+            "Use a physical shutter or disable the camera when you do not need it, if available."
+          ],
+          "tradeoff": "Disabling the camera may prevent video calls or camera-based features."
+        },
+        {
+          "id": "display-microphone",
+          "title": "Microphone & voice activation",
+          "purpose": "Choose how voice features listen and respond.",
+          "instructions": [
+            "Review microphone mute, wake-word, and voice activation controls.",
+            "Check whether the display has a hardware mute switch and how it signals mute.",
+            "If the display is linked to an assistant, review that account\u2019s voice settings too."
+          ],
+          "tradeoff": "Muting voice features may disable hands-free commands and voice search."
+        },
+        {
+          "id": "display-sensing",
+          "title": "Presence, gestures & ambient sensing",
+          "purpose": "Check for sensors that detect people, movement, or the room.",
+          "instructions": [
+            "Review presence detection, gesture control, ambient light, and sleep or wake features.",
+            "Disable sensing features you do not use if the display provides controls.",
+            "Note when sensing happens and whether the device offers a visible indicator."
+          ],
+          "tradeoff": "Disabling sensors may affect automatic screen, brightness, or room-aware features."
+        },
+        {
+          "id": "display-accounts",
+          "title": "Profiles, photos & personal content",
+          "purpose": "Review what personal accounts and content appear on the display.",
+          "instructions": [
+            "Check signed-in profiles, photo libraries, calendars, and other personal services.",
+            "Remove accounts or content sources you no longer use.",
+            "Review shared household access and the display\u2019s lock or personal-results options."
+          ],
+          "tradeoff": "Removing an account may also remove personalized content or household features."
+        },
+        {
+          "id": "display-integrations",
+          "title": "Connected devices & services",
+          "purpose": "Limit the services that can send information to or through the display.",
+          "instructions": [
+            "Review linked smart-home devices, voice services, and third-party apps.",
+            "Remove connections that are no longer useful.",
+            "Check privacy and retention controls in each linked service."
+          ],
+          "tradeoff": "Disconnecting a service may stop routines, casting, or voice control for those devices."
+        },
+        {
+          "id": "display-app",
+          "title": "Companion app & notifications",
+          "purpose": "Limit access through the phone app and notification previews.",
+          "instructions": [
+            "Review the companion app\u2019s microphone, camera, nearby-device, and location permissions.",
+            "Check whether notifications show personal information on the display or phone lock screen.",
+            "Turn off permissions or previews you do not need and test the features you use."
+          ],
+          "tradeoff": "Some permissions are needed for setup, calling, casting, or device discovery."
+        },
+        {
+          "id": "display-updates",
+          "title": "Updates & a final review",
+          "purpose": "Keep the display\u2019s software current and revisit privacy choices.",
+          "instructions": [
+            "Check the manufacturer\u2019s official update instructions.",
+            "After updates, review camera, microphone, account, sensing, and app controls.",
+            "Record any changed settings or questions."
+          ],
+          "tradeoff": "Updates may move controls; this checklist records your review but does not verify a specific model."
+        }
+      ]
+    },
+    {
+      "id": "thermostat",
+      "name": "Smart thermostat",
+      "summary": "Review occupancy sensing, location features, accounts, and data sharing.",
+      "cardDescription": "Check what occupancy and location features reveal about your routines.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "CISA: 5 steps to protecting your digital home",
+          "url": "https://www.cisa.gov/sites/default/files/publications/NCSAM_YourDigitalHome_2020.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "id": "thermo-schedule",
+          "title": "Schedules & occupancy patterns",
+          "purpose": "Understand what your schedule may reveal about household routines.",
+          "instructions": [
+            "Review programmed schedules, away modes, and occupancy-based changes.",
+            "Remove old schedules or locations you no longer use.",
+            "Choose a schedule that shares only the routine information you are comfortable storing."
+          ],
+          "tradeoff": "Schedules can reveal when a home is usually occupied and affect comfort or energy use."
+        },
+        {
+          "id": "thermo-location",
+          "title": "Location & geofencing",
+          "purpose": "Check whether phone location changes thermostat behavior.",
+          "instructions": [
+            "Review location permission for the thermostat app on each phone.",
+            "Check whether geofencing or arrival and departure automation is enabled.",
+            "Disable location-based features you do not use and confirm the home schedule still works."
+          ],
+          "tradeoff": "Turning off location features may stop automatic away or arrival adjustments."
+        },
+        {
+          "id": "thermo-sensors",
+          "title": "Presence & environmental sensors",
+          "purpose": "Review sensors used to adjust heating or cooling.",
+          "instructions": [
+            "Check for room sensors, occupancy detection, humidity, and other environmental readings.",
+            "Review how readings are used and whether optional sensing features can be disabled.",
+            "Remove or rename sensors you no longer use."
+          ],
+          "tradeoff": "Changing sensor use can affect comfort, room balancing, or automatic adjustments."
+        },
+        {
+          "id": "thermo-sharing",
+          "title": "Household & installer access",
+          "purpose": "Keep thermostat control with people who need it.",
+          "instructions": [
+            "Review household members, invited users, installer access, and active sessions.",
+            "Remove access that is no longer needed.",
+            "Check whether guests can view schedules, change settings, or invite other users."
+          ],
+          "tradeoff": "Removing access prevents those people from changing temperature or schedules."
+        },
+        {
+          "id": "thermo-integrations",
+          "title": "Voice & smart-home connections",
+          "purpose": "Review other services that can read or control the thermostat.",
+          "instructions": [
+            "Check connected voice assistants, home platforms, and automation services.",
+            "Remove integrations you no longer use.",
+            "Review privacy controls for the linked accounts separately."
+          ],
+          "tradeoff": "Disconnecting services may disable voice control and automated routines."
+        },
+        {
+          "id": "thermo-data",
+          "title": "Usage, energy & diagnostic data",
+          "purpose": "Understand reports about device use and energy patterns.",
+          "instructions": [
+            "Review energy reports, diagnostics, and product-improvement settings.",
+            "Check whether reports are tied to your account or shared with other services.",
+            "Disable optional reporting if you prefer and record unavailable controls."
+          ],
+          "tradeoff": "Turning off optional reports may reduce energy insights or troubleshooting help."
+        },
+        {
+          "id": "thermo-updates",
+          "title": "Updates & account review",
+          "purpose": "Revisit thermostat controls after updates or service changes.",
+          "instructions": [
+            "Check official firmware and companion-app update guidance.",
+            "Review app permissions and account security.",
+            "After updates, revisit schedules, location, sharing, and sensor choices."
+          ],
+          "tradeoff": "Updates can change menus and automatic behavior; the checklist is not model-specific."
+        }
+      ]
+    },
+    {
+      "id": "lighting",
+      "name": "Smart lighting",
+      "summary": "Review app access, schedules, integrations, and connected accounts.",
+      "cardDescription": "Check who can control your lights and which services are connected.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "CISA: 5 steps to protecting your digital home",
+          "url": "https://www.cisa.gov/sites/default/files/publications/NCSAM_YourDigitalHome_2020.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "id": "light-access",
+          "title": "App access & household members",
+          "purpose": "Know who can control the lights or view their state.",
+          "instructions": [
+            "Review users and households in the lighting app or hub.",
+            "Remove people and old accounts that no longer need access.",
+            "Check whether invited users can add more users or connect services."
+          ],
+          "tradeoff": "Removing access stops those people from controlling the lights through the app."
+        },
+        {
+          "id": "light-schedule",
+          "title": "Schedules, scenes & occupancy",
+          "purpose": "Review automation that can reveal when rooms are in use.",
+          "instructions": [
+            "Check schedules, presence-based routines, vacation mode, and motion sensors.",
+            "Remove routines you no longer use and review when they run.",
+            "Disable occupancy features you do not need, where controls are available."
+          ],
+          "tradeoff": "Changing automations may affect convenience, security routines, or energy use."
+        },
+        {
+          "id": "light-integrations",
+          "title": "Voice assistants & home platforms",
+          "purpose": "Limit connected services that can control the lighting system.",
+          "instructions": [
+            "Review voice assistants, home platforms, and third-party integrations.",
+            "Remove services you no longer use.",
+            "Check the linked account\u2019s privacy and voice-history controls separately."
+          ],
+          "tradeoff": "Disconnecting an integration may stop voice commands or cross-device routines."
+        },
+        {
+          "id": "light-network",
+          "title": "Connectivity & pairing",
+          "purpose": "Keep track of the hub and devices that join the lighting system.",
+          "instructions": [
+            "Review paired bulbs, switches, bridges, and remote access.",
+            "Remove devices that are no longer part of your home setup.",
+            "Check whether pairing mode or guest access remains enabled when not in use."
+          ],
+          "tradeoff": "Removing a pairing means you may need to reset or reconnect that device later."
+        },
+        {
+          "id": "light-permissions",
+          "title": "Companion app permissions",
+          "purpose": "Limit phone access granted to the lighting app.",
+          "instructions": [
+            "Review nearby-device, Bluetooth, local network, microphone, and location permissions if listed.",
+            "Turn off access not needed for the features you use.",
+            "Test discovery, setup, and remote-control features afterward."
+          ],
+          "tradeoff": "Setup and local discovery may rely on nearby-device or network permissions."
+        },
+        {
+          "id": "light-data",
+          "title": "Diagnostics & usage data",
+          "purpose": "Review optional reporting from the lighting app or hub.",
+          "instructions": [
+            "Look for diagnostics, analytics, or product-improvement choices.",
+            "Read what is shared and turn off optional reporting if you prefer.",
+            "Note if the app offers no control or clear description."
+          ],
+          "tradeoff": "Optional diagnostics may help troubleshoot connection and device issues."
+        },
+        {
+          "id": "light-updates",
+          "title": "Updates & a final review",
+          "purpose": "Recheck connected services and routines after updates.",
+          "instructions": [
+            "Check official app, hub, and firmware update guidance.",
+            "Review household access, integrations, schedules, and app permissions after an update.",
+            "Record routines or controls that have changed."
+          ],
+          "tradeoff": "Updates can change automation behavior or move menu options."
+        }
+      ]
+    },
+    {
+      "id": "vacuum",
+      "name": "Robot vacuum",
+      "summary": "Review maps, cameras, app access, sharing, and data retention.",
+      "cardDescription": "Check stored floor maps, sensors, account sharing, and app access.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "CISA: 5 steps to protecting your digital home",
+          "url": "https://www.cisa.gov/sites/default/files/publications/NCSAM_YourDigitalHome_2020.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "id": "vacuum-maps",
+          "title": "Maps, rooms & floor plans",
+          "purpose": "Check which maps the vacuum stores and how they are used.",
+          "instructions": [
+            "Review saved maps, room labels, no-go zones, and map backup options.",
+            "Delete maps for old homes or maps you no longer need.",
+            "Check whether maps sync to an account or remain on the vacuum."
+          ],
+          "tradeoff": "Deleting a map may require a new mapping run and room setup."
+        },
+        {
+          "id": "vacuum-sensors",
+          "title": "Cameras, microphones & sensors",
+          "purpose": "Find out what the vacuum can sense beyond movement.",
+          "instructions": [
+            "Check the manual for camera, microphone, obstacle recognition, and mapping sensors.",
+            "Review controls for visual recognition or sensor data collection.",
+            "Do not assume a sensor is present or disabled; record anything unverified."
+          ],
+          "tradeoff": "Disabling sensing can reduce obstacle avoidance or navigation features."
+        },
+        {
+          "id": "vacuum-sharing",
+          "title": "Account & household sharing",
+          "purpose": "Limit who can start, locate, or manage the vacuum.",
+          "instructions": [
+            "Review household users, shared accounts, and active sessions.",
+            "Remove access for people who no longer need it.",
+            "Check whether shared users can see maps, routines, or device location."
+          ],
+          "tradeoff": "Removing access stops that person from controlling the vacuum through the app."
+        },
+        {
+          "id": "vacuum-location",
+          "title": "Location & device finding",
+          "purpose": "Review location access and lost-device features.",
+          "instructions": [
+            "Check phone location permission for the companion app.",
+            "Review any last-seen location, device-finding, or remote-alert feature.",
+            "Turn off location access you do not need and verify what features are affected."
+          ],
+          "tradeoff": "Disabling location may prevent the app from locating a misplaced device."
+        },
+        {
+          "id": "vacuum-app",
+          "title": "Companion app permissions",
+          "purpose": "Limit access the vacuum app receives on your phone.",
+          "instructions": [
+            "Review nearby-device, local network, microphone, camera, and location permissions if listed.",
+            "Disable permissions that do not support features you use.",
+            "Test pairing, scheduling, and remote control afterward."
+          ],
+          "tradeoff": "Permissions may be required for initial setup or local discovery."
+        },
+        {
+          "id": "vacuum-data",
+          "title": "Cleaning history & diagnostics",
+          "purpose": "Understand reports about cleaning activity and device performance.",
+          "instructions": [
+            "Review cleaning history, usage analytics, and diagnostic-report settings.",
+            "Check whether reports include room names, maps, or timestamps.",
+            "Disable optional reporting if available and note unclear controls."
+          ],
+          "tradeoff": "Reducing history or diagnostics can limit cleaning insights and support."
+        },
+        {
+          "id": "vacuum-updates",
+          "title": "Updates & a final review",
+          "purpose": "Revisit map, sharing, and sensor choices after updates.",
+          "instructions": [
+            "Check official firmware and app update guidance.",
+            "After updates, review maps, account sharing, app permissions, and sensing choices.",
+            "Record any settings that moved or changed."
+          ],
+          "tradeoff": "Updates may change features; a completed checklist does not verify a specific model."
+        }
+      ]
+    },
+    {
+      "id": "appliance",
+      "name": "Connected appliance",
+      "summary": "Review app permissions, household sharing, diagnostics, and updates.",
+      "cardDescription": "Check what the companion app can access and what usage data is shared.",
+      "guideVersion": "1.3",
+      "reviewedAt": "2026-11-02",
+      "scope": {
+        "type": "generic",
+        "manufacturers": [],
+        "models": [],
+        "regions": [],
+        "firmware": []
+      },
+      "sources": [
+        {
+          "label": "FTC: Securing your internet-connected devices at home",
+          "url": "https://consumer.ftc.gov/articles/securing-your-internet-connected-devices-home"
+        },
+        {
+          "label": "CISA: 5 steps to protecting your digital home",
+          "url": "https://www.cisa.gov/sites/default/files/publications/NCSAM_YourDigitalHome_2020.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "id": "appliance-access",
+          "title": "Accounts & household access",
+          "purpose": "Know who can use the appliance\u2019s app or remote features.",
+          "instructions": [
+            "Review signed-in accounts, invited household members, and active sessions.",
+            "Remove access no longer needed.",
+            "Check what shared users can view or control."
+          ],
+          "tradeoff": "Removing access may prevent someone from starting or managing appliance cycles."
+        },
+        {
+          "id": "appliance-app",
+          "title": "Companion app permissions",
+          "purpose": "Limit what the appliance app can access on your phone.",
+          "instructions": [
+            "Review nearby-device, local network, Bluetooth, microphone, camera, and location permissions if listed.",
+            "Disable permissions you do not need for features you use.",
+            "Test setup and remote-control functions afterward."
+          ],
+          "tradeoff": "Some permissions may be necessary for pairing, alerts, or remote operation."
+        },
+        {
+          "id": "appliance-remote",
+          "title": "Remote start & controls",
+          "purpose": "Choose whether the appliance can be monitored or started remotely.",
+          "instructions": [
+            "Review remote monitoring, start, and notification options.",
+            "Disable remote control when you do not use it or when the appliance should be locally controlled.",
+            "Check for a physical control or interlock and follow the manual."
+          ],
+          "tradeoff": "Remote features may be required for alerts, scheduling, or energy programs."
+        },
+        {
+          "id": "appliance-sharing",
+          "title": "Voice services & integrations",
+          "purpose": "Review services connected to the appliance.",
+          "instructions": [
+            "Check voice assistants, home platforms, retailer services, and other integrations.",
+            "Remove connections you no longer use.",
+            "Review each linked provider\u2019s privacy controls separately."
+          ],
+          "tradeoff": "Disconnecting a service may stop voice commands or automated routines."
+        },
+        {
+          "id": "appliance-data",
+          "title": "Diagnostics & product usage",
+          "purpose": "Understand what usage information is shared for support or product improvement.",
+          "instructions": [
+            "Look for analytics, diagnostics, maintenance, and product-improvement settings.",
+            "Review what is collected and turn off optional sharing if you prefer.",
+            "Record controls that are unclear or unavailable."
+          ],
+          "tradeoff": "Optional diagnostics can support maintenance; essential service information may still be processed."
+        },
+        {
+          "id": "appliance-notices",
+          "title": "Alerts, cameras & voice features",
+          "purpose": "Check whether the appliance has sensors or captures information around it.",
+          "instructions": [
+            "Review cameras, microphones, voice controls, presence sensors, and notification previews if present.",
+            "Check physical indicators or privacy controls in the manual.",
+            "Disable features you do not use and note capabilities you cannot verify."
+          ],
+          "tradeoff": "Disabling sensors or alerts may reduce safety, monitoring, or convenience features."
+        },
+        {
+          "id": "appliance-updates",
+          "title": "Updates & final review",
+          "purpose": "Keep track of software updates and revisit privacy choices.",
+          "instructions": [
+            "Check official app and firmware update instructions.",
+            "After updates, review remote controls, sharing, app permissions, and diagnostics.",
+            "Record changes or unresolved questions."
+          ],
+          "tradeoff": "Updates can change menus and features; this checklist is not a model-specific certification."
+        }
+      ]
+    }
+  ]
+}
