@@ -1,29 +1,30 @@
-# Good Signal — Smart Device Privacy
+# Good Signal
 
-A browser-local PWA prototype based on the supplied SRS and Humaans design reference.
+## Know what your smart devices share—and what you can control.
 
-## Run
+Good Signal helps you review the privacy settings around your connected home, one practical step at a time. Explore clear checklists, record what you find, and keep track of questions to revisit.
 
-From `Mockups/still/dist`, run `python3 -m http.server 4173`, then visit http://localhost:4173. Production requires HTTPS for service workers and installation.
+[**Try Good Signal**](https://boredpolymath.github.io/GoodSignal/)
 
-## Included
+## A calmer way to review your devices
 
-- Responsive overview, inventory, and twelve category-level guides: TV, smart speaker, streaming device, soundbar, headphones and Bluetooth, Wi-Fi router and home hub, camera and doorbell, smart display, thermostat, smart lighting, robot vacuum, and connected appliances
-- Add, edit, remove, search, and filter devices
-- Seven privacy topics with four review states and per-step notes
-- Local persistence, save failure recovery, versioned JSON export/import with validation, replacement confirmation, restore recovery, and IndexedDB persistence
-- Human-readable reports, reset and deletion confirmations
-- App manifest, offline caching, installation guidance, separate cache controls, a versioned guide catalog, and user-controlled app updates that wait for saved checklist work
-- Step-ID-based guide update handling: unchanged progress is kept, new steps start unreviewed, materially changed steps are flagged, and removed steps retain their previous status and notes in device history
+Privacy settings can be scattered across device menus, companion apps, and account pages. Good Signal gives you a straightforward place to work through the topics that matter, such as voice controls, data sharing, app permissions, and updates.
 
-## Prototype boundaries
+- Browse guides for 12 smart-device categories, from TVs and speakers to routers, cameras, and connected appliances.
+- Record your choices, notes, and anything you still need to check.
+- Return to your progress when it’s convenient, including offline after preparing the app.
+- Review changes when a guide is updated.
 
-Generic instructions only; no verified model-specific guides or verified manufacturer/model coverage yet. No device discovery or configuration. Inventory, checklist progress, notes, and saved-guide metadata use IndexedDB, with a one-time migration from the earlier `still-v1` LocalStorage record. Good Signal applies a 20 MB app-managed data limit and warns in Settings as it approaches. Browser limits and eviction behavior vary; data is not encrypted. No cloud synchronization or analytics is built into the app. The hosting service receives ordinary requests for app files and guide updates, but Good Signal does not attach device inventory, notes, or progress. A completed checklist is not a privacy/security certification or guarantee. Generic guide text and its catalog are cached offline; external manufacturer pages require a connection. Model-specific guides can be saved for offline use when reviewed guides are added to the catalog. App/service-worker updates and guide-catalog updates have separate checks.
+## Your notes stay with you
 
-## Validation
+Good Signal doesn’t require an account. Your device list, checklist progress, and notes stay in your browser on your device; they aren’t sent to Good Signal. The app has no ads, analytics, or cloud sync. Its hosting service receives ordinary requests for app files, but not your saved checklist information.
 
-Chrome browser checks passed for device creation, all progress states, unresolved exclusion, notes, reload persistence, fully reviewed status, offline reload, and horizontal overflow at 390px and 320px. Desktop and mobile screenshots were visually inspected. Cross-browser and formal accessibility audits remain for production.
+## Useful guidance, without overpromising
 
-## Design
+Good Signal’s checklists offer general guidance for device categories. They are not verified for every make, model, region, or software version. The app doesn’t scan or control your devices, and completing a checklist is not a privacy or security certification. Check your device’s current manual and settings when making changes.
 
-Warm white, brown ink, coral actions, restrained sage accents; editorial serif headlines and compact sans-serif utility text. Locally rendered CSS device illustration and local PWA icons; no external asset or font requests.
+## Take Good Signal with you
+
+Use Good Signal in your browser. On supported browsers, you can also add it to your Home Screen or install it from the browser menu. Install options vary by device and browser.
+
+To report an outdated or incorrect guide, use **Report an outdated or incorrect guide** on a guide page. Good Signal prepares the report on your device so you can download or share it; it does not send reports automatically.

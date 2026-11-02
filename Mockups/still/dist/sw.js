@@ -1,4 +1,4 @@
-const CACHE='still-shell-v66';
+const CACHE='still-shell-v67';
 const FILES=['./','./index.html','./guide-catalog.json','./style.css?palette=46','./app.js?layout=38','./icon.svg?brand=2','./apple-touch-icon.png','./icon-192.png?brand=2','./icon-512.png?brand=2','./manifest.webmanifest?icons=3'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES))));
 self.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING')self.skipWaiting();});
