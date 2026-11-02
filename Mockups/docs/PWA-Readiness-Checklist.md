@@ -74,13 +74,13 @@ Working checklist for taking the current PWA prototype to an SRS-aligned release
 
 ## 7. Performance and acceptance testing
 
-- [ ] Measure cached app-shell launch against the SRS target of under 2 seconds on a mid-range Android reference device.
-- [ ] Measure ordinary checklist saves against the SRS target of under 500 ms.
-- [ ] Verify the compressed initial shell stays under 500 KB, excluding optional guide content.
-- [ ] Run the performance fixture with 50 devices and guides of up to 100 steps; record at least five measurements.
-- [ ] Test first online load, repeat load, offline reopen, offline edits, reconnect, guide updates, and update during an active checklist.
-- [ ] Test empty inventory, search with no results, unavailable guides, malformed imports, storage failures, and recovery paths.
-- [ ] Confirm the SRS acceptance criteria are met and record any browser-specific limitations.
+- [ ] Measure cached app-shell launch under 2 seconds on the SRS mid-range Android reference device. Desktop Chrome mobile emulation at 412×915 CSS px, DPR 2.6, and 4× CPU throttling: 5 cached offline launches were 54.7, 56.0, 55.1, 54.8, and 57.4 ms (median 55.1 ms). This is a desktop emulation result; the Android reference-device measurement is still required.
+- [ ] Measure ordinary checklist saves under 500 ms on the SRS reference device. In the same desktop emulation and 50-device fixture, seven IndexedDB save measurements were 23.5, 22.3, 22.6, 22.8, 22.8, 23.1, and 25.5 ms (median 22.8 ms). The real Android reference-device measurement remains open.
+- [x] Verify the compressed initial shell stays under 500 KB, excluding optional guide content. Summed gzip-compressed sizes for the 10 required shell assets, including the generic guide catalog, were 384,842 bytes (375.8 KiB); raw combined size was 534,191 bytes.
+- [x] Run the performance fixture with 50 devices and guides of up to 100 steps; record at least five measurements. Added repeatable fixture at `Mockups/still/performance-check.cjs`; it uses 50 devices, 4,950 saved progress entries, and 99 steps per category before a guide update adds step 100. Five fixture online loads were 73.7, 64.4, 57.2, 57.5, and 62.4 ms. The run used desktop Chrome on macOS, mobile emulation, and 4× CPU throttling.
+- [x] Test first online load, repeat load, offline reopen, offline edits, reconnect, guide updates, and update during an active checklist. Initial online shell: 414.7 ms. All listed lifecycle scenarios passed in the local Chrome fixture; the waiting app update stayed blocked on the checklist and applied after leaving it.
+- [x] Test empty inventory, search with no results, unavailable guides, malformed imports, storage failures, and recovery paths. All passed in the local Chrome fixture, including backup export and Retry after a simulated IndexedDB write failure.
+- [ ] Confirm all SRS acceptance criteria and browser-specific limitations. The selected performance and lifecycle scenarios passed in desktop Chrome; actual mid-range Android, iOS Safari, macOS Safari, Edge, Firefox, assistive-technology, and broader release acceptance coverage remain outstanding.
 
 ## 8. Release operations
 
