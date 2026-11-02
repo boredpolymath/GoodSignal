@@ -66,11 +66,23 @@ Working checklist for taking the current PWA prototype to an SRS-aligned release
 ## 6. Accessibility and browser support
 
 - [ ] Complete a full WCAG 2.2 AA accessibility review. A focused review is complete in local Chrome desktop, Safari on macOS, and the in-app browser; screen-reader and cross-platform coverage remain.
-- [ ] Test keyboard-only navigation, visible focus, dialogs, forms, status messages, and screen-reader announcements. Keyboard order, focus visibility, modal focus containment/return, labelled fields, and status/alert roles were checked in Chrome desktop; screen-reader announcements remain unverified.
-- [ ] Check color contrast, text resizing/zoom, reduced-motion behavior, and small touch targets. Palette contrast, reduced-motion CSS, and mobile target sizes were checked. Chrome was checked at 200% browser zoom across Home, My Devices, Guides, Settings, and a guide detail with no horizontal overflow; text-only resizing remains to be checked.
+- [ ] Test keyboard-only navigation, visible focus, dialogs, forms, status messages, and screen-reader announcements.
+  - [x] In Chrome, keyboard traversal reached the visible Skip to content link and showed a focus indicator. The guide-report dialog had an accessible label, kept Tab focus inside, closed with Escape, and returned focus to its trigger. Add-device fields had labels; required Manufacturer and Model fields blocked submission, and focus moved to Manufacturer. Progress feedback uses a status role and save errors use an alert role.
+  - [ ] Verify screen-reader announcements; they remain unrun.
+- [ ] Check color contrast, text resizing/zoom, reduced-motion behavior, and small touch targets.
+  - [x] Palette contrast was previously checked. At 200% browser zoom, Chrome had no horizontal overflow across Home, My Devices, Guides, Settings, and a guide detail.
+  - [x] Chrome honored `prefers-reduced-motion: reduce`; button transition duration was 0 seconds.
+  - [x] At 320 and 390 CSS px, visible interactive targets were at least 24 px high/wide or passed the spacing exception. “How to read guide status” is 22.4 px high; its center is 79.4 px from the nearest other target.
+  - [ ] Text-only resizing remains untested.
 - [x] Verify layouts from 320 CSS pixels through desktop widths without unintended horizontal scrolling. Checked home, devices, guides, a guide, and settings at 320, 390, 600, 768, 1024, and 1440 CSS pixels in local previews.
-- [ ] Test current stable Chrome on Android and desktop, Safari on iOS and macOS, Edge on desktop, and Firefox on desktop. Chrome desktop and Safari on macOS were checked; Chrome on Android, Safari on iOS, Edge, and Firefox still need device/browser coverage.
-- [ ] Verify both browser-tab and installed standalone experiences; document platform-specific install limitations. Browser-tab experience and Chrome’s install prompt were checked; the Good Signal icon now appears in the prompt. The installed Chrome app was verified with its local preview server stopped: cached Home loaded and navigation worked for My Devices, Guides, a guide detail, and Settings. Platform install paths: Chrome on Android offers Install (or Install and create shortcut) from the menu ([Google Chrome Help](https://support.google.com/chrome/answer/9658361)); Safari on iPhone supports Add to Home Screen and Open as Web App ([Apple Support](https://support.apple.com/en-gb/guide/iphone/iphea86e5236/27/ios/27)). These mobile paths and other browser/OS combinations have not been tested on devices; document browser-specific prompts and standalone behavior after that coverage.
+- [ ] Test current stable Chrome on Android and desktop, Safari on iOS and macOS, Edge on desktop, and Firefox on desktop.
+  - [x] Chrome desktop and Safari on macOS were checked previously.
+  - [x] Safari on iOS 27.0 was smoke-checked in the iPhone 17e Simulator: Home and Guides rendered from the live GitHub Pages app.
+  - [ ] Chrome on Android, Edge, and Firefox remain untested. Edge and Firefox are not installed here; the Android 37 emulator stayed offline in ADB on this 8 GB Mac.
+- [ ] Verify both browser-tab and installed standalone experiences; document platform-specific install limitations.
+  - [x] Chrome’s install prompt displayed the Good Signal icon. The installed Chrome app was verified with its local preview server stopped: cached Home loaded and navigation worked for My Devices, Guides, a guide detail, and Settings.
+  - [x] The iOS 27.0 Simulator loaded the live Home and Guides screens in Safari browser tabs.
+  - [ ] Android install, iOS Add to Home Screen, and iOS standalone launch remain untested. Platform install paths: Chrome on Android offers Install (or Install and create shortcut) from the menu ([Google Chrome Help](https://support.google.com/chrome/answer/9658361)); Safari on iPhone supports Add to Home Screen and Open as Web App ([Apple Support](https://support.apple.com/en-gb/guide/iphone/iphea86e5236/27/ios/27)).
 
 ## 7. Performance and acceptance testing
 
@@ -80,14 +92,24 @@ Working checklist for taking the current PWA prototype to an SRS-aligned release
 - [x] Run the performance fixture with 50 devices and guides of up to 100 steps; record at least five measurements. Added repeatable fixture at `Mockups/still/performance-check.cjs`; it uses 50 devices, 4,950 saved progress entries, and 99 steps per category before a guide update adds step 100. Five fixture online loads were 73.7, 64.4, 57.2, 57.5, and 62.4 ms. The run used desktop Chrome on macOS, mobile emulation, and 4× CPU throttling.
 - [x] Test first online load, repeat load, offline reopen, offline edits, reconnect, guide updates, and update during an active checklist. Initial online shell: 414.7 ms. All listed lifecycle scenarios passed in the local Chrome fixture; the waiting app update stayed blocked on the checklist and applied after leaving it.
 - [x] Test empty inventory, search with no results, unavailable guides, malformed imports, storage failures, and recovery paths. All passed in the local Chrome fixture, including backup export and Retry after a simulated IndexedDB write failure.
-- [ ] Confirm all SRS acceptance criteria and browser-specific limitations. The selected performance and lifecycle scenarios passed in desktop Chrome; actual mid-range Android, iOS Safari, macOS Safari, Edge, Firefox, assistive-technology, and broader release acceptance coverage remain outstanding.
+- [ ] Confirm all SRS acceptance criteria and browser-specific limitations. The selected performance and lifecycle scenarios passed in desktop Chrome; the iPhone 17e Simulator smoke-check confirms Safari can render Home and Guides, but actual mid-range Android measurements, iOS interaction/offline/standalone coverage, macOS Safari, Edge, Firefox, assistive-technology, and broader release acceptance coverage remain outstanding. The Android 37 emulator stayed offline in ADB on this 8 GB Mac; its startup warned that 16 GB RAM is recommended.
 
 ## 8. Release operations
 
 - [ ] Confirm the final product title, app icons, and install name display as Good Signal on supported platforms.
+  - [x] The PWA manifest names the app and short name “Good Signal” and references SVG, 192×192, 512×512, and 180×180 Apple touch icons; the referenced PNG files are valid at those dimensions.
+  - [x] Good Signal branding is visible in the iOS Safari smoke check. The Chrome install prompt previously showed the Good Signal icon, and the user confirmed the iOS Home Screen icon works.
+  - [ ] Verify the installed app name/icon on every supported platform. Android and iOS standalone installs were not tested. In browser tabs, the document title is route-specific (for example “Overview”), not “Good Signal”.
 - [ ] Decide whether to keep the current `still-device-privacy` URL or move to a Good Signal URL; update redirects/bookmarks if the address changes.
+  - [x] The Sites project is live at `still-device-privacy.slopedteal.chatgpt.site`; the GitHub Pages app has also been opened at `boredpolymath.github.io/GoodSignal/`.
+  - [ ] Confirm which URL is canonical and whether the other should redirect; no redirect or bookmark migration is documented.
 - [ ] Document how guide content is reviewed, versioned, published, and rolled back.
+  - [x] `Mockups/docs/Guide-Coverage-and-Maintenance.md` documents the content owner, review cadence, source/scope rules, review record, versioning, migration entries, and stable step IDs.
+  - [x] `.github/workflows/deploy-pages.yml` publishes `Mockups/still/dist` to GitHub Pages on pushes to the default branch.
+  - [ ] A rollback procedure for a guide catalog or site release is not documented.
 - [ ] Publish release notes and support/reporting instructions.
+  - [x] The guide maintenance document explains that reports stay on the device and can be downloaded or shared; it explicitly says reports are not sent automatically.
+  - [ ] Publish release notes and configure a support contact or reporting destination; neither is present in the current project documentation.
 
 ## Reference
 
