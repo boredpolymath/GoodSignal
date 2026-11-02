@@ -1,5 +1,5 @@
-const CACHE='still-shell-v65';
-const FILES=['./','./index.html','./guide-catalog.json','./style.css?palette=46','./app.js?layout=38','./icon.svg?brand=2','./icon-192.png?brand=2','./icon-512.png?brand=2','./manifest.webmanifest?icons=3'];
+const CACHE='still-shell-v66';
+const FILES=['./','./index.html','./guide-catalog.json','./style.css?palette=46','./app.js?layout=38','./icon.svg?brand=2','./apple-touch-icon.png','./icon-192.png?brand=2','./icon-512.png?brand=2','./manifest.webmanifest?icons=3'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES))));
 self.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING')self.skipWaiting();});
 self.addEventListener('activate',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);const ready=await Promise.all(FILES.map(file=>cache.match(file)));if(!ready.every(Boolean))throw Error('New app shell is incomplete; keeping existing caches.');await self.clients.claim();const keys=await caches.keys();await Promise.all(keys.filter(key=>key.startsWith('still-shell-')&&key!==CACHE).map(key=>caches.delete(key)));})()));
