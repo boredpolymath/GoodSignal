@@ -5,7 +5,7 @@ Guide content version: 1.3
 
 ## Initial coverage
 
-The maintained, versioned source is `Mockups/still/dist/guide-catalog.json`. It contains guide versions, review dates, sources, category steps, stable step identifiers, and a migration log. The app checks guide updates separately from service-worker/app updates and caches the catalog for offline use.
+The maintained, versioned source is `guide-catalog.json`. It contains guide versions, review dates, sources, category steps, stable step identifiers, and a migration log. The app checks guide updates separately from service-worker/app updates and caches the catalog for offline use.
 
 Good Signal currently offers generic category checklists for:
 

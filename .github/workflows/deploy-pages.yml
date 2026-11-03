@@ -27,10 +27,15 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare app files
+        run: |
+          mkdir -p site-build
+          cp app.js apple-touch-icon.png guide-catalog.json icon-192.png icon-512.png icon.svg index.html manifest.webmanifest style.css sw.js site-build/
+
       - name: Upload app files
         uses: actions/upload-pages-artifact@v4
         with:
-          path: Mockups/still/dist
+          path: site-build
 
       - name: Deploy to GitHub Pages
         id: deployment

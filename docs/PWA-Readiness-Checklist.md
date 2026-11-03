@@ -25,7 +25,7 @@ Working checklist for taking the current PWA prototype to an SRS-aligned release
 
 ## 2. Guide updates and offline availability
 
-- [x] Add a maintained, versioned guide source at `Mockups/still/dist/guide-catalog.json`; guide updates have a separate check from app/service-worker updates.
+- [x] Add a maintained, versioned guide source at `guide-catalog.json`; guide updates have a separate check from app/service-worker updates.
 - [x] Let users save available verified model-specific guides offline from the matching device screen. The current catalog contains none, so no model guide is available to save yet.
 - [x] Explain that generic guide text is cached while external manufacturer documentation links require an internet connection.
 - [x] Show guide version and review date on guide cards, guide details, and Offline Access settings.
@@ -89,7 +89,7 @@ Working checklist for taking the current PWA prototype to an SRS-aligned release
 - [ ] Measure cached app-shell launch under 2 seconds on the SRS mid-range Android reference device. Desktop Chrome mobile emulation at 412×915 CSS px, DPR 2.6, and 4× CPU throttling: 5 cached offline launches were 54.7, 56.0, 55.1, 54.8, and 57.4 ms (median 55.1 ms). This is a desktop emulation result; the Android reference-device measurement is still required.
 - [ ] Measure ordinary checklist saves under 500 ms on the SRS reference device. In the same desktop emulation and 50-device fixture, seven IndexedDB save measurements were 23.5, 22.3, 22.6, 22.8, 22.8, 23.1, and 25.5 ms (median 22.8 ms). The real Android reference-device measurement remains open.
 - [x] Verify the compressed initial shell stays under 500 KB, excluding optional guide content. Summed gzip-compressed sizes for the 10 required shell assets, including the generic guide catalog, were 384,842 bytes (375.8 KiB); raw combined size was 534,191 bytes.
-- [x] Run the performance fixture with 50 devices and guides of up to 100 steps; record at least five measurements. Added repeatable fixture at `Mockups/still/performance-check.cjs`; it uses 50 devices, 4,950 saved progress entries, and 99 steps per category before a guide update adds step 100. Five fixture online loads were 73.7, 64.4, 57.2, 57.5, and 62.4 ms. The run used desktop Chrome on macOS, mobile emulation, and 4× CPU throttling.
+- [x] Run the performance fixture with 50 devices and guides of up to 100 steps; record at least five measurements. Added repeatable fixture at `performance-check.cjs`; it uses 50 devices, 4,950 saved progress entries, and 99 steps per category before a guide update adds step 100. Five fixture online loads were 73.7, 64.4, 57.2, 57.5, and 62.4 ms. The run used desktop Chrome on macOS, mobile emulation, and 4× CPU throttling.
 - [x] Test first online load, repeat load, offline reopen, offline edits, reconnect, guide updates, and update during an active checklist. Initial online shell: 414.7 ms. All listed lifecycle scenarios passed in the local Chrome fixture; the waiting app update stayed blocked on the checklist and applied after leaving it.
 - [x] Test empty inventory, search with no results, unavailable guides, malformed imports, storage failures, and recovery paths. All passed in the local Chrome fixture, including backup export and Retry after a simulated IndexedDB write failure.
 - [ ] Confirm all SRS acceptance criteria and browser-specific limitations. The selected performance and lifecycle scenarios passed in desktop Chrome; the iPhone 17e Simulator smoke-check confirms Safari can render Home and Guides, but actual mid-range Android measurements, iOS interaction/offline/standalone coverage, macOS Safari, Edge, Firefox, assistive-technology, and broader release acceptance coverage remain outstanding. The Android 37 emulator stayed offline in ADB on this 8 GB Mac; its startup warned that 16 GB RAM is recommended.
@@ -104,8 +104,8 @@ Working checklist for taking the current PWA prototype to an SRS-aligned release
   - [x] The Sites project is live at `still-device-privacy.slopedteal.chatgpt.site`; the GitHub Pages app has also been opened at `boredpolymath.github.io/GoodSignal/`.
   - [ ] Confirm which URL is canonical and whether the other should redirect; no redirect or bookmark migration is documented.
 - [ ] Document how guide content is reviewed, versioned, published, and rolled back.
-  - [x] `Mockups/docs/Guide-Coverage-and-Maintenance.md` documents the content owner, review cadence, source/scope rules, review record, versioning, migration entries, and stable step IDs.
-  - [x] `.github/workflows/deploy-pages.yml` publishes `Mockups/still/dist` to GitHub Pages on pushes to the default branch.
+  - [x] `docs/Guide-Coverage-and-Maintenance.md` documents the content owner, review cadence, source/scope rules, review record, versioning, migration entries, and stable step IDs.
+  - [x] `.github/workflows/deploy-pages.yml` publishes the root-level app files to GitHub Pages on pushes to the default branch.
   - [ ] A rollback procedure for a guide catalog or site release is not documented.
 - [ ] Publish release notes and support/reporting instructions.
   - [x] The guide maintenance document explains that reports stay on the device and can be downloaded or shared; it explicitly says reports are not sent automatically.

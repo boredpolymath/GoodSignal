@@ -4,7 +4,7 @@
  * PATH=/Applications/ChatGPT.app/Contents/Resources/cua_node/bin:$PATH \
  * PLAYWRIGHT_PATH=/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules/playwright \
  * CHROME_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' \
- * node Mockups/still/performance-check.cjs
+ * node performance-check.cjs
  */
 'use strict';
 const fs=require('fs');
@@ -13,7 +13,7 @@ const path=require('path');
 const {performance}=require('perf_hooks');
 const {chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright');
 
-const root=path.join(__dirname,'dist');
+const root=__dirname;
 const originalCatalog=JSON.parse(fs.readFileSync(path.join(root,'guide-catalog.json'),'utf8'));
 const categories=originalCatalog.guides.map(g=>g.id);
 const makeCatalog=(version,count)=>{
