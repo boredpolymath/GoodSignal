@@ -1,3 +1,5 @@
+![Good Signal: a calmer way to review smart-device privacy settings](assets/readme-thumbnails/candidate-1-device-illustration.jpg)
+
 # Good Signal
 
 ## Know what your smart devices share—and what you can control.
