@@ -30,3 +30,9 @@ Good Signal’s checklists offer general guidance for device categories. They ar
 Use Good Signal in your browser. On supported browsers, you can also add it to your Home Screen or install it from the browser menu. Install options vary by device and browser.
 
 To report an outdated or incorrect guide, use **Report an outdated or incorrect guide** on a guide page. Good Signal prepares the report on your device so you can download or share it; it does not send reports automatically.
+
+## Contributing and support
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development and pull request guidance. For help, issue reports, and guide corrections, see [SUPPORT.md](SUPPORT.md). Please read the [Code of Conduct](CODE_OF_CONDUCT.md) before participating. Security researchers can find private reporting guidance in [SECURITY.md](SECURITY.md).
+
+Good Signal is licensed under the [MIT License](LICENSE).

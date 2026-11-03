@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a problem with Good Signal.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please avoid sharing personal information, credentials, or private device data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that led to the problem.
+      placeholder: 1. Open… 2. Choose… 3. See…
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Safari 18, Chrome 130, Firefox 132…
+  - type: input
+    id: platform
+    attributes:
+      label: Device and operating system
+      placeholder: iPhone / iOS, Windows laptop / Windows 11…
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add screenshots or details that help explain the issue. Remove sensitive information first.

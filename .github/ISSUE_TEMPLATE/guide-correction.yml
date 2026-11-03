@@ -1,0 +1,41 @@
+name: Guide correction
+description: Report outdated or incorrect guide information.
+title: "[Guide]: "
+labels: [guide-content]
+body:
+  - type: markdown
+    attributes:
+      value: Remove personal information, account details, and private device data before submitting. A report is not proof that a device or guide has been verified.
+  - type: input
+    id: category
+    attributes:
+      label: Device category
+    validations:
+      required: true
+  - type: input
+    id: guide-version
+    attributes:
+      label: Guide version or review date
+      description: Find this on the guide page, if available.
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should be reviewed?
+      description: Identify the checklist step or claim and explain what appears outdated or incorrect.
+    validations:
+      required: true
+  - type: textarea
+    id: device-scope
+    attributes:
+      label: Device details, if relevant
+      description: Manufacturer, exact model, region, and firmware/software version. Leave out serial numbers and account details.
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source URL
+      description: Prefer official manufacturer documentation.
+  - type: textarea
+    id: local-report
+    attributes:
+      label: Prepared report text, if available
+      description: You can paste the report prepared by Good Signal after reviewing it for sensitive details.
